@@ -4,4 +4,7 @@
 		#1c1c1c 0%,
 		#000000 100%
 	);
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 }

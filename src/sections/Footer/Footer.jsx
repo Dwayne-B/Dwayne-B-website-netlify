@@ -3,8 +3,8 @@ import React from 'react';
 import './Footer.scss';
 function Footer() {
 	return (
-		<div className='  flex justify-around h-[30vh] items-center footer'>
-			<div className='       flex   gap-5  text-white'>
+		<div className='  flex justify-around h-[30vh] items-center footer '>
+			<div className='       flex  gap-5  text-white'>
 				<a href='#home'>Home</a>
 				<a href='#about'>About</a>
 				<a href='#projects'>Projects</a>
