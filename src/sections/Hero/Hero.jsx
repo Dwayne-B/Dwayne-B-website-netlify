@@ -14,6 +14,7 @@ function Hero() {
 				</h1>
 				<div className='socialLinks-container flex my-8'>
 					<motion.a
+						target='_blank'
 						href='https://www.freecodecamp.org/DwayneB435'
 						whileHover={{
 							rotate: 25,
@@ -37,6 +38,7 @@ function Hero() {
 					</motion.a>
 
 					<motion.a
+						target='_blank'
 						href='https://www.linkedin.com/in/dwayne-bynum-webdeveloper/'
 						whileHover={{
 							rotate: 25,
@@ -68,6 +70,7 @@ function Hero() {
 					</motion.a>
 
 					<motion.a
+						target='_blank'
 						href='https://github.com/Dwayne-B'
 						whileHover={{
 							rotate: 25,
