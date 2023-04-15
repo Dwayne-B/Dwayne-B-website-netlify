@@ -1,0 +1,28 @@
+@use '../../SassUtil/index' as u;
+
+.about-image {
+	border-radius: 100px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+.about-content {
+	@media (min-width: 660px) {
+		max-width: 85%;
+		width: 85%;
+	}
+	@media (min-width: 776px) {
+		max-width: 70%;
+		width: 70%;
+		margin: auto;
+	}
+	p {
+		// max-width: 85%;
+		padding-top: u.toRem(10);
+		padding-bottom: u.toRem(40);
+	}
+}
+
+.btn-container {
+	padding: 0;
+	margin: 0;
+}

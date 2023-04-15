@@ -1,0 +1,35 @@
+@use '../../SassUtil/index' as u;
+.hero-section {
+	position: relative;
+	background-image: url('./assets/office.webp');
+	background-position: u.toRem(-65);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+
+	@media (min-width: 600px) {
+		background-position: left;
+	}
+	@media (min-width: 375px) {
+		background-position: center;
+	}
+	&::before {
+		content: '';
+		background-color: #00000085;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		z-index: 0;
+	}
+}
+
+.socialLinks-container {
+	margin-top: 50px;
+	gap: u.toRem(40);
+}
+
+.btn-container {
+	display: flex;
+	gap: 15px;
+}

@@ -1,0 +1,45 @@
+@use '../../SassUtil/index' as u;
+
+.project-display {
+	// border: solid red 2px;
+	padding: u.toRem(55);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: u.toRem(20);
+
+	@media (min-width: 630px) {
+		width: 60%;
+		margin: auto;
+	}
+	@media (min-width: 768px) {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		// border: solid red;
+	}
+}
+
+.project-filter span {
+	margin-right: u.toRem(20);
+	cursor: pointer;
+}
+.project-container {
+	position: relative;
+	overflow: hidden;
+}
+.project-image {
+	// transform: rotateX(160deg) rotateZ(-15deg) rotateY(180deg);
+	mix-blend-mode: color-burn;
+	position: absolute;
+	right: u.toRem(-200);
+	bottom: u.toRem(1500);
+	z-index: -1;
+
+	@media (min-width: 768px) {
+		right: u.toRem(-200);
+		bottom: u.toRem(10);
+	}
+}

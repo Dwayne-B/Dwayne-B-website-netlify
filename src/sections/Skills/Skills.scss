@@ -1,0 +1,78 @@
+@use '../../SassUtil/index' as u;
+
+.skills-container {
+	position: relative;
+
+	// z-index: ;
+	& div {
+		margin: auto;
+
+		border: none;
+	}
+}
+.skills-accent-image {
+	mix-blend-mode: color-burn;
+	position: absolute;
+	left: u.toRem(-200);
+	top: u.toRem(115);
+	z-index: -1;
+}
+
+.skills-tech-container {
+	@media (min-width: 769px) {
+		// justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
+		gap: u.toRem(20);
+	}
+}
+.skills-bg {
+	margin-bottom: 20px;
+
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+
+	// height: u.toRem(200);
+
+	// display: flex;
+	// flex-direction: column;
+	// flex-wrap: wrap;
+	// gap: u.toRem(20);
+	// list-style: none;
+	padding: u.toRem(10) 0 u.toRem(10) u.toRem(15);
+	// background-color: rgb(159, 185, 223);
+
+	background: linear-gradient(
+		90deg,
+		rgba(157, 157, 157, 0.9) 0%,
+		rgba(211, 161, 115, 0.7) 100%
+	);
+
+	& label {
+		@media (min-width: 769px) {
+			text-align: center;
+		}
+	}
+	@media (min-width: 768px) {
+		width: 42%;
+		// max-width: u.toRem(350);
+		margin-bottom: 0px;
+	}
+}
+
+.skill-images {
+	@media (min-width: 630px) {
+		width: u.toRem(35);
+	}
+}
+
+.skills-container h2 {
+	margin-bottom: u.toRem(30);
+	// text-align: left;
+}
+.skills-tech {
+	margin-top: u.toRem(30);
+}
+.skills-tech h4 {
+	margin-bottom: u.toRem(25);
+	// text-align: center;
+}

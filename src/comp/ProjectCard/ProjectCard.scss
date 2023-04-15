@@ -1,0 +1,67 @@
+@use '../../SassUtil/index' as u;
+
+.projectCard {
+	position: relative;
+	display: flex;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+
+	min-width: 50%;
+	@media (min-width: 769px) {
+		min-width: 30%;
+		width: 30%;
+		max-width: 30%;
+	}
+}
+.project-img {
+	object-fit: cover;
+	width: 100%;
+	max-width: u.toRem(400);
+	max-height: u.toRem(400);
+}
+
+.projectCard-content {
+	color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	// margin: auto auto auto auto;
+
+	background-color: rgba(38, 36, 55, 0.542);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: u.toRem(25) 0;
+	// border: solid blue 3px;
+}
+.projectCard-content h4 {
+	// margin-bottom: u.toRem(20);
+	// border: solid 2px black;
+}
+.tech {
+	gap: u.toRem(20);
+}
+.tech-icons {
+	display: flex;
+	justify-content: center;
+	gap: u.toRem(20);
+	list-style: none;
+	padding: u.toRem(10) 0;
+	// border: solid green 3px;
+}
+
+.projectCard-btn-contianer {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+.projectCard-btn-contianer button {
+	max-width: u.toRem(150);
+	min-width: u.toRem(85);
+	width: 100%;
+	@media (min-width: 635px) {
+		// font-size: larger;
+		// width: u.toRem(90);
+	}
+}

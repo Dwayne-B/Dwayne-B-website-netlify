@@ -1,0 +1,41 @@
+{
+	"name": "dwaynebynum",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@formspree/react": "^2.4.1",
+		"@react-three/drei": "^9.65.3",
+		"@react-three/fiber": "^8.12.1",
+		"formik": "^2.2.9",
+		"framer-motion": "^10.12.2",
+		"hamburger-react": "^2.5.0",
+		"react": "^18.2.0",
+		"react-burger-menu": "^3.0.9",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.8.0",
+		"three": "^0.151.3",
+		"vite-plugin-compress": "^2.1.1",
+		"vite-plugin-imagemin": "^0.6.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"@vitejs/plugin-react": "^3.1.0",
+		"autoprefixer": "^10.4.14",
+		"postcss": "^8.4.21",
+		"rollup-plugin-gzip": "^3.1.0",
+		"rollup-plugin-imagemin": "^0.4.1",
+		"sass": "^1.61.0",
+		"tailwindcss": "^3.3.1",
+		"vite": "^4.2.0"
+	},
+	"browserslist": [
+		"defaults"
+	]
+}

@@ -1,0 +1,17 @@
+@use '../../SassUtil/index' as u;
+.Contact-form {
+	display: flex;
+	flex-direction: column;
+	max-width: u.toRem(598);
+}
+.Contact-form button {
+	align-self: flex-end;
+}
+.Contact-form span {
+	margin-bottom: u.toRem(10);
+	display: flex;
+	flex-direction: column;
+	label {
+		color: rgba(32, 27, 27, 0.7);
+	}
+}
