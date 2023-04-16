@@ -40,10 +40,10 @@ function About() {
 					<p>
 						I’m an enthusiastic developer with a knack for
 						building easy-to-use web-based solutions. I
-						enjoy all things JavaScript but you have my
-						attention when it’s anything technology related.
-						The most rewarding part of coding is to be able
-						to bring ideas to reality!
+						enjoy all things JavaScript but generally you
+						have my attention when it’s anything technology
+						related. The most rewarding part of coding is to
+						be able to bring ideas to reality!
 					</p>
 				</span>
 				<span className='btn-container '>
@@ -71,9 +71,9 @@ function About() {
 					<span>
 						<h3>Email Devlopment</h3>
 						<p>
-							I work with design assets to build responsive
-							user-friendly websites and applications using
-							modern technology and best practices.
+							I use HTML, CSS, and other coding languages to
+							build responsive designs across various email
+							clients and devices.
 						</p>
 					</span>
 				</div>
