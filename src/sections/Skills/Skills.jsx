@@ -1,6 +1,6 @@
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
-import React, { useEffect, useState } from 'react';
+import { Suspense, lazy } from 'react';
 import accent from '../../assets/accent.webp';
 import css from '../../assets/tech-icons/css.webp';
 import dynamodb from '../../assets/tech-icons/dynamodb.webp';
@@ -17,8 +17,12 @@ import tailwind from '../../assets/tech-icons/tailwind.webp';
 import typescript from '../../assets/tech-icons/ts.webp';
 import webflow from '../../assets/tech-icons/webflow.webp';
 import wix from '../../assets/tech-icons/wix.webp';
-import Ball from '../../comp/Ball/Ball';
+// import Ball from '../../comp/Ball/Ball';
 import './Skills.scss';
+
+const BallCanvas = lazy(() =>
+	import('../../comp/BallCanvas/BallCanvas'),
+);
 function Skills() {
 	// AOS.init();
 
@@ -101,11 +105,15 @@ function Skills() {
 					className='skills-tech-container '>
 					{skills.map((skill, i) => {
 						return (
-							<div className='skills-bg'>
+							<div className='skills-bg' key={i}>
 								<label htmlFor=''>{skill.title}</label>
 								<div className='canvas  h-fit flex '>
 									{skill.urls.map((url, i) => {
-										return <Ball url={url} id={i} />;
+										return (
+											<Suspense key={i}>
+												<BallCanvas url={url} id={i} />
+											</Suspense>
+										);
 									})}
 								</div>
 							</div>

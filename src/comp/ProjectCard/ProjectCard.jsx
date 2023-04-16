@@ -1,5 +1,6 @@
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 import React from 'react';
 import './ProjectCard.scss';
 
@@ -11,7 +12,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 				className='project-img'
 				src={url}
 				alt={title}
-				srcset=''
+				srcSet=''
 			/>
 			<div className='projectCard-content'>
 				{<h4>{title}</h4>}

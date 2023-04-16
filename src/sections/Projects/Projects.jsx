@@ -213,9 +213,10 @@ function Projects() {
 				</div>
 			</div>
 			<div className='project-display'>
-				{filteredProjects.map((project) => {
+				{filteredProjects.map((project, i) => {
 					return (
 						<ProjectCard
+							key={i}
 							title={project.title}
 							url={project.url}
 							tech={project.tech}
