@@ -70,5 +70,9 @@ button,
 		width: u.toRem(175);
 		height: u.toRem(30);
 	}
+	@media (min-width: 300px) {
+		width: u.toRem(150);
+		height: u.toRem(30);
+	}
 	// background-color: #43a28d;
 }

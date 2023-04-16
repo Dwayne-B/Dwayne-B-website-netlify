@@ -10,9 +10,7 @@
 	@media (min-width: 600px) {
 		background-position: left;
 	}
-	@media (min-width: 375px) {
-		background-position: center;
-	}
+
 	&::before {
 		content: '';
 		background-color: #00000085;
