@@ -1,4 +1,5 @@
-# Check out my website here ->[Dwayne-B-Website](https://www.dwaynebynum.com/)
+# Check out my website here -> [Dwayne-B-Website](https://www.dwaynebynum.com/)
+---
 ## Description
 This is my portfolio website built with react. I Really wanted to add a 3D element for this iteration of my portfolio.
 I was inspired by a video showcasing 3d elements. As seen below I sacraficed performance for this flashy little element. However I am looking for solutions to bring that number back up. Any ideas appreciated! 
@@ -10,7 +11,7 @@ I was inspired by a video showcasing 3d elements. As seen below I sacraficed per
 ###Metrics After adding 3d element
 ![alt text](https://i.ibb.co/RhhWDZ3/after-3d-website.png)
 
-
+---
 ##Installation
 git clone -> npm install -> npm run dev
 
