@@ -1,11 +1,11 @@
 import { useForm } from '@formspree/react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+import { motion } from 'framer-motion';
+
 import { useFormik } from 'formik';
 import React from 'react';
 import './ContactForm.scss';
 function ContactForm() {
-	// AOS.init();
 	const formik = useFormik({
 		initialValues: { name: '', email: '', msg: '' },
 		onSubmit: (values) => {
@@ -49,12 +49,16 @@ function ContactForm() {
 					onChange={formik.handleChange}
 					value={formik.values.msg}></textarea>
 			</span>
-			<button
+			<motion.button
+				whileHover={{
+					background:
+						'linear-gradient(180deg,#34725d 0%,#081516 100%)',
+				}}
 				className='everyOtherBtn'
 				data-aos='fade-down'
 				type='submit'>
 				Submit
-			</button>
+			</motion.button>
 		</form>
 	);
 }

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { React, useContext } from 'react';
 import { SmoothScrollContext } from '../../Context/SmoothScrollContext';
 import profile from '../../assets/profile.webp';
@@ -48,14 +49,24 @@ function About() {
 				</span>
 				<span className='btn-container '>
 					<a href='#projects'>
-						<button className='about-btn'>
+						<motion.button
+							whileHover={{
+								background:
+									'linear-gradient(180deg,#34725d 0%,#081516 100%)',
+							}}
+							className='about-btn'>
 							View Projects
-						</button>
+						</motion.button>
 					</a>
 					<a href={resume} download>
-						<button className='about-btn'>
+						<motion.button
+							whileHover={{
+								background:
+									'linear-gradient(180deg,#34725d 0%,#081516 100%)',
+							}}
+							className='about-btn'>
 							Download Resume
-						</button>
+						</motion.button>
 					</a>
 				</span>
 				<div className='pt-20'>

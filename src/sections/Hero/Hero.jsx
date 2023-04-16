@@ -100,11 +100,24 @@ function Hero() {
 				</div>
 				<div className='btn-container'>
 					<a href='#projects'>
-						<button>View Projects</button>
+						<motion.button
+							whileHover={{
+								rotateY: 360,
+								background:
+									'linear-gradient(180deg,#34725d 0%,#081516 100%)',
+							}}>
+							View Projects
+						</motion.button>
 					</a>
 
 					<a href='#contact'>
-						<button>Contact</button>
+						<motion.button
+							whileHover={{
+								background:
+									'linear-gradient(180deg,#34725d 0%,#081516 100%)',
+							}}>
+							Contact
+						</motion.button>
 					</a>
 				</div>
 			</div>
