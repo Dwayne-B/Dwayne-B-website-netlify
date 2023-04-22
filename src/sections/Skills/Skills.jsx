@@ -20,9 +20,6 @@ import wix from '../../assets/tech-icons/wix.webp';
 // import Ball from '../../comp/Ball/Ball';
 import './Skills.scss';
 
-const BallCanvas = lazy(() =>
-	import('../../comp/BallCanvas/BallCanvas'),
-);
 function Skills() {
 	// AOS.init();
 
@@ -105,18 +102,22 @@ function Skills() {
 					className='skills-tech-container '>
 					{skills.map((skill, i) => {
 						return (
-							<div className='skills-bg' key={i}>
+							<ul className='skills-bg ' key={i}>
 								<label htmlFor=''>{skill.title}</label>
-								<div className='canvas  h-fit flex '>
+								<li className=' tech-skill h-fit flex w-50'>
 									{skill.urls.map((url, i) => {
 										return (
 											<Suspense key={i}>
-												<BallCanvas url={url} id={i} />
+												<img
+													className='skill-images'
+													src={url}
+													alt='skill'
+												/>
 											</Suspense>
 										);
 									})}
-								</div>
-							</div>
+								</li>
+							</ul>
 						);
 					})}
 				</div>
