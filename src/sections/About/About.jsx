@@ -45,12 +45,11 @@ function About() {
 						I’m an enthusiastic developer with a knack for
 						building easy-to-use web-based solutions.I focus
 						on Javascript technologies like React, React
-						Native and Node.js. I enjoy all things
-						technology, and my goal is to leverage
-						technology to build a sustainable future. The
-						most rewarding part of coding is to be able to
-						bring ideas to reality and watch the world
-						interact with it!
+						Native and Node.js. I enjoy all things tech, and
+						my goal is to leverage technology to build a
+						sustainable future. The most rewarding part of
+						coding is to be able to bring ideas to reality
+						and watch the world interact with it!
 					</p>
 				</span>
 				<span className='btn-container '>

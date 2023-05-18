@@ -23,8 +23,21 @@
 }
 
 .project-filter span {
-	margin-right: u.toRem(20);
+	// margin-right: u.toRem(20);
+	padding: 0 20px;
+	text-align: center;
 	cursor: pointer;
+	border: black;
+	transition: all 0.4s;
+}
+.project-filter span:nth-child(odd) {
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+.project-filter span:hover {
+	border-bottom: 1px solid;
+	transition: all 0.4s;
+	// background-color: red;
 }
 .project-container {
 	position: relative;
