@@ -7,7 +7,10 @@ import './About.scss';
 function About() {
 	const { aboutRef } = useContext(SmoothScrollContext);
 	return (
-		<div ref={aboutRef} className='about-container section'>
+		<div
+			id='about'
+			ref={aboutRef}
+			className='about-container section'>
 			<div className='about-content flex flex-col gap-5'>
 				<picture>
 					{/* lg-desktop */}
@@ -40,11 +43,14 @@ function About() {
 					</h2>
 					<p>
 						I’m an enthusiastic developer with a knack for
-						building easy-to-use web-based solutions. I
-						enjoy all things JavaScript but generally you
-						have my attention when it’s anything technology
-						related. The most rewarding part of coding is to
-						be able to bring ideas to reality!
+						building easy-to-use web-based solutions.I focus
+						on Javascript technologies like React, React
+						Native and Node.js. I enjoy all things
+						technology, and my goal is to leverage
+						technology to build a sustainable future. The
+						most rewarding part of coding is to be able to
+						bring ideas to reality and watch the world
+						interact with it!
 					</p>
 				</span>
 				<span className='btn-container '>

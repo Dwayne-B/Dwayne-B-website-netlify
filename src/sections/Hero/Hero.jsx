@@ -102,7 +102,6 @@ function Hero() {
 					<a href='#projects'>
 						<motion.button
 							whileHover={{
-								rotateY: 360,
 								background:
 									'linear-gradient(180deg,#34725d 0%,#081516 100%)',
 							}}>
