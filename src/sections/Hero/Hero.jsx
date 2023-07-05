@@ -1,15 +1,22 @@
 import { motion } from 'framer-motion';
-import { React, useContext } from 'react';
+
+import {
+	React,
+	useContext,
+	useEffect,
+	useState,
+} from 'react';
 import { SmoothScrollContext } from '../../Context/SmoothScrollContext';
+import heroBg from '../../assets/office.webp';
 function Hero() {
 	const { homeRef } = useContext(SmoothScrollContext);
+	const [mousX, setMouseX] = useState(0);
+
 	return (
-		<div
-			id='home'
-			ref={homeRef}
-			className='hero-section section  flex '>
-			<div className='content-container flex justify-center evenly items-center flex-col m-auto z-[888]'>
-				<h1 className=' text-center'>
+		<div id='home' className='hero-section section    '>
+			<img className='hero-img' src={heroBg} alt='' />
+			<div className='hero-content'>
+				<h1 ref={homeRef} className='text-center  '>
 					Front-end Developer
 				</h1>
 				<div className='socialLinks-container flex my-8'>

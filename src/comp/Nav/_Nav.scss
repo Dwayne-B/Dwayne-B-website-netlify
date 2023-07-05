@@ -1,5 +1,6 @@
 @use '../../SassUtil/index' as u;
 .Navbar {
+	// display: none;
 	height: u.toRem(80);
 	color: white;
 	position: fixed;

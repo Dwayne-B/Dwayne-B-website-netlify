@@ -1,16 +1,11 @@
 @use '../../SassUtil/index' as u;
 .hero-section {
 	position: relative;
-	background-image: url('./assets/office.webp');
-	background-position: u.toRem(-65);
-	background-repeat: no-repeat;
-	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	z-index: 1;
-
-	@media (min-width: 600px) {
-		background-position: left;
-	}
-
+	border: solid red 2px;
 	&::before {
 		content: '';
 		background-color: #00000085;
@@ -20,14 +15,33 @@
 		top: 0;
 		z-index: 0;
 	}
+	// background-image: url('./assets/office.webp');
+	// background-position: u.toRem(-65);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	@media (min-width: 600px) {
+		background-position: left;
+	}
+}
+.hero-img {
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	height: 100%;
 }
 
 .socialLinks-container {
-	margin-top: 50px;
 	gap: u.toRem(40);
 }
 
 .btn-container {
 	display: flex;
 	gap: 15px;
+}
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
 }

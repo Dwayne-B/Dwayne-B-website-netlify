@@ -208,7 +208,7 @@ function Projects() {
 							console.log(e.target.innerHTML);
 							setTag(e.target.innerHTML);
 						}}>
-						Email
+						React-Native
 					</span>
 				</div>
 			</div>

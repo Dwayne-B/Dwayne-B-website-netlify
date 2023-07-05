@@ -1,9 +1,20 @@
 @use '../../SassUtil/index' as u;
+.about-container {
+	position: relative;
+	border: solid red;
+	padding-top: 110px;
+}
 
 .about-image {
-	border-radius: 100px;
-	aspect-ratio: 1/1;
-	object-fit: cover;
+	z-index: -1;
+	// border-radius: 100px;
+	// aspect-ratio: 1/1;
+	object-fit: contain;
+	width: 19.8125rem;
+	// height: 19.8125rem;
+	left: -159px;
+	top: 14px;
+	position: absolute;
 }
 .about-content {
 	@media (min-width: 660px) {
@@ -17,12 +28,22 @@
 	}
 	p {
 		// max-width: 85%;
-		padding-top: u.toRem(10);
-		padding-bottom: u.toRem(40);
+		margin-top: u.toRem(30);
+		// padding-bottom: u.toRem(50);
+	}
+	span {
+		color: rgb(110, 231, 183);
 	}
 }
 
 .btn-container {
-	padding: 0;
-	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.about-secondary-content {
+	border: solid red;
+	margin-top: u.toRem(50);
+	p {
+		margin-top: u.toRem(30);
+	}
 }

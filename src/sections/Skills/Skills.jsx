@@ -2,6 +2,7 @@
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { Suspense, lazy } from 'react';
 import accent from '../../assets/accent.webp';
+import phone from '../../assets/phone.png';
 import css from '../../assets/tech-icons/css.webp';
 import dynamodb from '../../assets/tech-icons/dynamodb.webp';
 import express from '../../assets/tech-icons/express.webp';
@@ -71,56 +72,167 @@ function Skills() {
 
 	return (
 		<div className='skills-container section '>
-			<picture>
-				{/* lg-desktop */}
-				<source
-					media='(min-width: 650px)'
-					srcSet={accent}
-					width={600}
-					height={600}
-				/>
-				{/* med-tablet */}
-				<source
-					media='(min-width: 465px)'
-					srcSet={accent}
-					width={800}
-					height={800}
-				/>
-				{/* sm */}
-				<img
-					className='skills-accent-image '
-					src={accent}
-					alt='Example'
-					width={600}
-					height={600}
-				/>
-			</picture>
-			<div id='skills' className='skills-content'>
-				<h2>Technology</h2>
-				<div
-					data-aos='fade-up'
-					className='skills-tech-container '>
-					{skills.map((skill, i) => {
-						return (
-							<ul className='skills-bg ' key={i}>
-								<label htmlFor=''>{skill.title}</label>
-								<li className=' tech-skill h-fit flex w-50'>
-									{skill.urls.map((url, i) => {
-										return (
-											<Suspense key={i}>
-												<img
-													className='skill-images'
-													src={url}
-													alt='skill'
-												/>
-											</Suspense>
-										);
-									})}
-								</li>
-							</ul>
-						);
-					})}
+			<h2>Frequently Used Technology</h2>
+			<div className='skill-content'>
+				<svg
+					width='24'
+					height='24'
+					viewBox='0 0 24 24'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'>
+					<path
+						d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+					<path
+						d='M12 8L8 12L12 16'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+					<path
+						d='M16 12H8'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+				</svg>
+
+				<div>
+					<img
+						className='skill-image m-auto'
+						src={phone}
+						alt=''
+					/>
+					<div className='skill-data-container'>
+						<span>
+							<p className='text-left'>HTML</p>
+							<div
+								className='Group1'
+								style={{
+									width: 256,
+									height: 8,
+									position: 'relative',
+								}}>
+								<div
+									style={{
+										width: 256,
+										height: 8,
+
+										background: 'white',
+										borderRadius: 12,
+									}}
+								/>
+								<div
+									style={{
+										width: 198,
+										height: 8,
+										left: 0,
+										top: 0,
+										position: 'absolute',
+										background: '#64E2B5',
+										borderRadius: 12,
+									}}
+								/>
+							</div>
+						</span>
+						<span>
+							<p className='text-left'>CSS</p>
+							<div
+								className='Group1'
+								style={{
+									width: 256,
+									height: 8,
+									position: 'relative',
+								}}>
+								<div
+									style={{
+										width: 256,
+										height: 8,
+
+										background: 'white',
+										borderRadius: 12,
+									}}
+								/>
+								<div
+									style={{
+										width: 198,
+										height: 8,
+										left: 0,
+										top: 0,
+										position: 'absolute',
+										background: '#64E2B5',
+										borderRadius: 12,
+									}}
+								/>
+							</div>
+						</span>
+						<span>
+							<p className='text-left'>JavaScript</p>
+							<div
+								className='Group1'
+								style={{
+									width: 256,
+									height: 8,
+									position: 'relative',
+								}}>
+								<div
+									style={{
+										width: 256,
+										height: 8,
+
+										background: 'white',
+										borderRadius: 12,
+									}}
+								/>
+								<div
+									style={{
+										width: 198,
+										height: 8,
+										left: 0,
+										top: 0,
+										position: 'absolute',
+										background: '#64E2B5',
+										borderRadius: 12,
+									}}
+								/>
+							</div>
+						</span>
+					</div>
 				</div>
+				<svg
+					width='24'
+					height='24'
+					viewBox='0 0 24 24'
+					fill='none'
+					xmlns='http://www.w3.org/2000/svg'>
+					<path
+						d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+					<path
+						d='M12 16L16 12L12 8'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+					<path
+						d='M8 12H16'
+						stroke='white'
+						stroke-width='2'
+						stroke-linecap='round'
+						stroke-linejoin='round'
+					/>
+				</svg>
 			</div>
 		</div>
 	);
