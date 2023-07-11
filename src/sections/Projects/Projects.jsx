@@ -33,15 +33,7 @@ function Projects() {
 				'https://github.com/Dwayne-B/FEM-sunnysideAgency',
 			demo: 'https://dwayne-b.github.io/FEM-sunnysideAgency/',
 		},
-		{
-			title: 'Base Apparel',
-			url: baseApparel,
-			tag: 'front-end',
 
-			tech: [html, css, javascript],
-			github: 'https://github.com/Dwayne-B/FEM-BaseApparel',
-			demo: 'https://dwayne-b.github.io/FEM-BaseApparel/',
-		},
 		{
 			title: 'Listen With Kristen',
 			url: lwk,
@@ -71,15 +63,6 @@ function Projects() {
 		},
 
 		{
-			title: 'Activi',
-			url: Activi,
-			tag: 'front-end',
-			tech: [ReactUrl],
-
-			github: 'https://github.com/Dwayne-B/Activi',
-			demo: 'https://fantastic-churros-610ab4.netlify.app/',
-		},
-		{
 			title: 'CookBook',
 			url: Cookbook,
 			tag: 'Fullstack',
@@ -87,14 +70,6 @@ function Projects() {
 			tech: [mongo, express, ReactUrl, node],
 			github: 'https://github.com/Dwayne-B/cookbook',
 			demo: 'https://luxury-cuchufli-d864bf.netlify.app/',
-		},
-		{
-			title: 'Modern Email Template',
-			url: ModernEmail,
-			tag: 'Email',
-			tech: [html, css],
-			github: 'https://github.com/Dwayne-B/html-email',
-			demo: 'https://dwayne-b.github.io/html-email/',
 		},
 	];
 	const [projects, setProjects] = useState(projectData);
@@ -142,30 +117,6 @@ function Projects() {
 			id='projects'
 			className='section project-container'
 			data-aos='fade-up'>
-			<picture>
-				{/* lg-desktop */}
-				<source
-					media='(min-width: 650px)'
-					srcSet={accent}
-					width={600}
-					height={600}
-				/>
-				{/* med-tablet */}
-				<source
-					media='(min-width: 465px)'
-					srcSet={accent}
-					width={800}
-					height={800}
-				/>
-				{/* sm */}
-				<img
-					className='project-image '
-					src={accent}
-					alt='Example'
-					width={600}
-					height={600}
-				/>
-			</picture>
 			<div className='project-heading'>
 				<h2>Projects</h2>
 				<div className='project-filter'>

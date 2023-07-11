@@ -14,7 +14,7 @@ function ContactForm() {
 	});
 	return (
 		<form
-			target='_blank'
+			target=''
 			action='https://formspree.io/f/xvonrryo'
 			method='POST'
 			className='Contact-form m-auto'>
@@ -45,6 +45,8 @@ function ContactForm() {
 					name='msg'
 					style={{
 						'height': '125px',
+						color: 'black',
+						padding: '10px',
 					}}
 					onChange={formik.handleChange}
 					value={formik.values.msg}></textarea>

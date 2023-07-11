@@ -1,5 +1,8 @@
 @use '../../SassUtil/index' as u;
-
+.project-heading h2,
+.project-filter {
+	padding-bottom: u.toRem(30);
+}
 .project-display {
 	// border: solid red 2px;
 	padding: u.toRem(55);
@@ -24,10 +27,10 @@
 
 .project-filter span {
 	// margin-right: u.toRem(20);
-	padding: 0 20px;
+	padding: 0 10px;
 	text-align: center;
 	cursor: pointer;
-	border: black;
+	border: white;
 	transition: all 0.4s;
 }
 .project-filter span:nth-child(odd) {
@@ -36,7 +39,8 @@
 }
 .project-filter span:hover {
 	border-bottom: 1px solid;
-	transition: all 0.4s;
+	transition: all 0.3s ease-out;
+	border-bottom: 5px solid #64e2b5;
 	// background-color: red;
 }
 .project-container {

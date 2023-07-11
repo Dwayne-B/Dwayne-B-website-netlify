@@ -1,6 +1,7 @@
 @use '../../SassUtil/index' as u;
 
 .projectCard {
+	border-radius: u.toRem(5);
 	position: relative;
 	display: flex;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
@@ -13,6 +14,8 @@
 	}
 }
 .project-img {
+	border-radius: u.toRem(5);
+
 	object-fit: cover;
 	width: 100%;
 	max-width: u.toRem(400);
@@ -20,6 +23,8 @@
 }
 
 .projectCard-content {
+	border-radius: u.toRem(5);
+
 	color: white;
 	position: absolute;
 	width: 100%;

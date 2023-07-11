@@ -6,17 +6,17 @@ import {
 	useEffect,
 	useState,
 } from 'react';
-import { SmoothScrollContext } from '../../Context/SmoothScrollContext';
+// import { SmoothScrollContext } from '../../Context/SmoothScrollContext';
 import heroBg from '../../assets/office.webp';
 function Hero() {
-	const { homeRef } = useContext(SmoothScrollContext);
+	// const { homeRef } = useContext(SmoothScrollContext);
 	const [mousX, setMouseX] = useState(0);
 
 	return (
 		<div id='home' className='hero-section section    '>
 			<img className='hero-img' src={heroBg} alt='' />
 			<div className='hero-content'>
-				<h1 ref={homeRef} className='text-center  '>
+				<h1 className='text-center  '>
 					Front-end Developer
 				</h1>
 				<div className='socialLinks-container flex my-8'>

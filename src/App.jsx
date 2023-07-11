@@ -1,6 +1,6 @@
 import { Suspense, lazy, useState } from 'react';
 import './App.scss';
-import { SmoothScrollProvider } from './Context/SmoothScrollContext';
+
 import Nav from './comp/Nav/Nav';
 // import About from './sections/About/About';
 
@@ -27,24 +27,22 @@ function App() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<SmoothScrollProvider>
-			<div className='App'>
-				<div className='master-container '>
-					<Nav />
-					<div className='content-container '>
-						<Hero />
-						<Suspense fallback={<h2>Loading</h2>}>
-							<About />
-							<Skills />
-							<Projects />
-							<Contact />
-						</Suspense>
+		<div className='App'>
+			<div className='master-container '>
+				<Nav />
+				<div className='content-container '>
+					<Hero />
+					<Suspense fallback={<h2>Loading</h2>}>
+						<About />
+						<Skills />
+						<Projects />
+						<Contact />
+					</Suspense>
 
-						<Footer />
-					</div>
+					<Footer />
 				</div>
 			</div>
-		</SmoothScrollProvider>
+		</div>
 	);
 }
 

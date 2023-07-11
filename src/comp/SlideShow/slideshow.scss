@@ -1,0 +1,22 @@
+.slide-show-container {
+	// border: solid 1px red;
+	display: flex;
+	margin: 200px;
+
+	// width: 300px;
+	justify-content: center;
+
+	margin: auto;
+}
+
+.slide-container {
+	gap: 15px;
+	// border: solid green 3px;
+	display: flex;
+}
+
+.slide-show-container img {
+	// border: solid 1px blue;
+	// width: 75px;
+	// height: 150px;
+}

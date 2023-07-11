@@ -1,7 +1,7 @@
 @use '../../SassUtil/index' as u;
 .about-container {
 	position: relative;
-	border: solid red;
+	// border: solid red;
 	padding-top: 110px;
 }
 
@@ -41,7 +41,7 @@
 	justify-content: center;
 }
 .about-secondary-content {
-	border: solid red;
+	// border: solid red;
 	margin-top: u.toRem(50);
 	p {
 		margin-top: u.toRem(30);

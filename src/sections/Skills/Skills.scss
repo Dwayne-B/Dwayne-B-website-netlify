@@ -1,8 +1,8 @@
 @use '../../SassUtil/index' as u;
 .skills-container {
-	border: solid red;
+	// border: solid red;
 	min-height: 100%;
-	// padding-bottom: u.toRem(50);
+	padding-bottom: u.toRem(50);
 }
 .skill-content {
 	display: flex;
@@ -10,6 +10,8 @@
 	align-items: center;
 	justify-content: space-around;
 	// border: solid red;
+	margin-top: u.toRem(30);
+	// margin-bottom: u.toRem(30);
 }
 .skill-image {
 	margin-top: u.toRem(30);
@@ -18,9 +20,10 @@
 }
 svg {
 	cursor: pointer;
-	margin-top: u.toRem(-150);
+	// margin-top: u.toRem(-150);
 }
 .skill-data-container {
+	margin-top: u.toRem(30);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

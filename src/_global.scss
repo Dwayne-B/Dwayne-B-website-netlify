@@ -86,3 +86,8 @@ button,
 	}
 	// background-color: #43a28d;
 }
+input,
+textarea {
+	padding: 10px;
+	border-radius: u.toRem(5);
+}

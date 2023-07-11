@@ -1,16 +1,12 @@
 import { motion } from 'framer-motion';
 import { React, useContext } from 'react';
-import { SmoothScrollContext } from '../../Context/SmoothScrollContext';
+
 import profile from '../../assets/profile.png';
 import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 import './About.scss';
 function About() {
-	const { aboutRef } = useContext(SmoothScrollContext);
 	return (
-		<div
-			id='about'
-			ref={aboutRef}
-			className='about-container section'>
+		<div id='about' className='about-container section'>
 			<div className='about-content flex flex-col gap-5'>
 				<picture>
 					{/* lg-desktop */}

@@ -1,5 +1,7 @@
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+import { motion } from 'framer-motion';
 import { Suspense, lazy } from 'react';
 import accent from '../../assets/accent.webp';
 import phone from '../../assets/phone.png';
@@ -19,11 +21,11 @@ import typescript from '../../assets/tech-icons/ts.webp';
 import webflow from '../../assets/tech-icons/webflow.webp';
 import wix from '../../assets/tech-icons/wix.webp';
 // import Ball from '../../comp/Ball/Ball';
+import SlideShow from '../../comp/SlideShow/SlideShow';
 import './Skills.scss';
-
 function Skills() {
 	// AOS.init();
-
+	const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 	const skills = [
 		{
 			title: 'Front-end',
@@ -36,45 +38,46 @@ function Skills() {
 		// 	skillNames: ['node'],
 		// 	urls: [node],
 		// },
-		{
-			title: 'Databases',
-			skillNames: ['mongodb'],
-			urls: [mongodb, dynamodb, postgres],
-		},
-		{
-			title:
-				'✨ Syntactic Sugar✨ , Frameworks & Libraries ',
+		// {
+		// 	title: 'Databases',
+		// 	skillNames: ['mongodb'],
+		// 	urls: [mongodb, dynamodb, postgres],
+		// },
+		// {
+		// 	title:
+		// 		'✨ Syntactic Sugar✨ , Frameworks & Libraries ',
 
-			skillNames: [
-				'react',
-				'sass',
-				'tailwind',
-				'nextjs',
-				'express',
-				'typescript',
-			],
-			urls: [
-				react,
-				sass,
-				tailwind,
-				// nextjs,
-				express,
-				typescript,
-			],
-		},
-		{
-			title: 'No-Code',
-			skillNames: ['wix,webflow'],
+		// 	skillNames: [
+		// 		'react',
+		// 		'sass',
+		// 		'tailwind',
+		// 		'nextjs',
+		// 		'express',
+		// 		'typescript',
+		// 	],
+		// 	urls: [
+		// 		react,
+		// 		sass,
+		// 		tailwind,
+		// 		// nextjs,
+		// 		express,
+		// 		typescript,
+		// 	],
+		// },
+		// {
+		// 	title: 'No-Code',
+		// 	skillNames: ['wix,webflow'],
 
-			urls: [wix, webflow],
-		},
+		// 	urls: [wix, webflow],
+		// },
 	];
-
+	console.log(skills[0]);
 	return (
 		<div className='skills-container section '>
 			<h2>Frequently Used Technology</h2>
 			<div className='skill-content'>
-				<svg
+				<motion.svg
+					whileTap={{ scale: 0.8 }}
 					width='24'
 					height='24'
 					viewBox='0 0 24 24'
@@ -83,32 +86,28 @@ function Skills() {
 					<path
 						d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M12 8L8 12L12 16'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M16 12H8'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
-				</svg>
+				</motion.svg>
 
 				<div>
-					<img
-						className='skill-image m-auto'
-						src={phone}
-						alt=''
-					/>
+					<SlideShow skill={skills} />
 					<div className='skill-data-container'>
 						<span>
 							<p className='text-left'>HTML</p>
@@ -214,23 +213,23 @@ function Skills() {
 					<path
 						d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M12 16L16 12L12 8'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M8 12H16'
 						stroke='white'
-						stroke-width='2'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeWidth='2'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 				</svg>
 			</div>
