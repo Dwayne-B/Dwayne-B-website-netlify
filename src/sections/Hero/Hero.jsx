@@ -10,22 +10,99 @@ import {
 import heroBg from '../../assets/office.webp';
 function Hero() {
 	// const { homeRef } = useContext(SmoothScrollContext);
-	const [mousX, setMouseX] = useState(0);
+	const [hover, setIsHovered] = useState(false);
+	const ContainerAnimation = {
+		hidden: {
+			x: 1000,
+			opacity: 0,
+		},
+		show: {
+			x: 0,
+			opacity: 1.0,
+			transition: {
+				duration: 0.5,
+				when: 'beforeChildren',
+				staggerChildren: 0.2,
+			},
+		},
+		hover: {
+			rotate: 25,
+		},
+	};
+	const linksContainerAnimation = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1.0,
+			transition: {
+				duration: 0.5,
+				when: 'beforeChildren',
+				staggerChildren: 0.2,
+			},
+		},
+		hover: {
+			rotate: 25,
+		},
+	};
+	const buttonContainer = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1.0,
+			transition: {
+				duration: 0.5,
+				when: 'beforeChildren',
+				staggerChildren: 0.3,
+				delay: 0.9,
+			},
+		},
+		hover: {
+			rotate: 25,
+		},
+	};
+	const linksAnimation = {
+		hidden: {
+			y: 550,
+		},
+		show: {
+			y: 0,
+		},
+		hover: {
+			rotate: 25,
+		},
+	};
+	function handleMouseEnter() {
+		setIsHovered(true);
+	}
 
+	function handleMouseLeave() {
+		setIsHovered(false);
+	}
 	return (
-		<div id='home' className='hero-section section    '>
+		<div
+			id='home'
+			className='hero-section section overflow-hidden   '>
 			<img className='hero-img' src={heroBg} alt='' />
-			<div className='hero-content'>
+			<motion.div
+				variants={ContainerAnimation}
+				initial='hidden'
+				animate='show'
+				className='hero-content'>
 				<h1 className='text-center  '>
 					Front-end Developer
 				</h1>
-				<div className='socialLinks-container flex my-8'>
+				<motion.div
+					variants={linksContainerAnimation}
+					className='socialLinks-container flex my-8'>
 					<motion.a
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}
 						target='_blank'
 						href='https://www.freecodecamp.org/DwayneB435'
-						whileHover={{
-							rotate: 25,
-						}}>
+						variants={linksAnimation}
+						whileHover={{ rotate: 360 }}>
 						<svg
 							className='icon'
 							width='45'
@@ -44,9 +121,8 @@ function Hero() {
 					<motion.a
 						target='_blank'
 						href='https://www.linkedin.com/in/dwayne-bynum-webdeveloper/'
-						whileHover={{
-							rotate: 25,
-						}}>
+						variants={linksAnimation}
+						whileHover={{ rotate: 360 }}>
 						<svg
 							className='icon'
 							width='45'
@@ -76,9 +152,8 @@ function Hero() {
 					<motion.a
 						target='_blank'
 						href='https://github.com/Dwayne-B'
-						whileHover={{
-							rotate: 25,
-						}}>
+						variants={linksAnimation}
+						whileHover={{ rotate: 360 }}>
 						<svg
 							className='icon'
 							width='45'
@@ -104,9 +179,13 @@ function Hero() {
 							</defs>
 						</svg>
 					</motion.a>
-				</div>
-				<div className='btn-container'>
-					<a href='#projects'>
+				</motion.div>
+				<motion.div
+					variants={buttonContainer}
+					className='btn-container'>
+					<motion.a
+						href='#projects'
+						variants={linksAnimation}>
 						<motion.button
 							whileHover={{
 								background:
@@ -114,9 +193,11 @@ function Hero() {
 							}}>
 							View Projects
 						</motion.button>
-					</a>
+					</motion.a>
 
-					<a href='#contact'>
+					<motion.a
+						variants={linksAnimation}
+						href='#contact'>
 						<motion.button
 							whileHover={{
 								background:
@@ -124,9 +205,9 @@ function Hero() {
 							}}>
 							Contact
 						</motion.button>
-					</a>
-				</div>
-			</div>
+					</motion.a>
+				</motion.div>
+			</motion.div>
 		</div>
 	);
 }

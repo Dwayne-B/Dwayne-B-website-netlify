@@ -1,14 +1,23 @@
 import { motion } from 'framer-motion';
 import { React, useContext } from 'react';
-
 import profile from '../../assets/profile.png';
 import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 import './About.scss';
 function About() {
 	return (
-		<div id='about' className='about-container section'>
-			<div className='about-content flex flex-col gap-5'>
-				<picture>
+		<div
+			id='about'
+			className='about-container section overflow-hidden'>
+			<div className='about-content flex flex-col m-auto gap-5'>
+				<motion.picture
+					initial={{
+						opacity: -1,
+						zIndex: 0,
+					}}
+					whileInView={{
+						zIndex: -1,
+						opacity: 1,
+					}}>
 					{/* lg-desktop */}
 					<source
 						media='(min-width: 650px)'
@@ -31,12 +40,36 @@ function About() {
 						width={125}
 						height={125}
 					/>
-				</picture>
-				<div>
-					<h2>
-						Hi, I’m <span className=''>Dwayne</span>,
-						Front-end Developer based in Orlando Florida.
-					</h2>
+				</motion.picture>
+				<motion.div>
+					<motion.h2>
+						Hi, I’m{' '}
+						<motion.span
+							initial={{
+								scale: 1,
+								y: 0,
+							}}
+							whileInView={{
+								scale: 1.25,
+								y: -30,
+							}}
+							className='name	'>
+							Dwayne
+						</motion.span>
+						, Front-end{' '}
+						<motion.span
+							initial={{
+								scale: 1,
+								y: 0,
+							}}
+							whileInView={{
+								scale: 1.25,
+								y: -30,
+							}}>
+							Developer
+						</motion.span>{' '}
+						based in Orlando, Florida.
+					</motion.h2>
 					<p>
 						I’m an enthusiastic developer with a passion for
 						building easy-to-use web-based solutions. I
@@ -45,7 +78,7 @@ function About() {
 						coding because it allows me to bring complex
 						ideas to reality!
 					</p>
-				</div>
+				</motion.div>
 				<div className='btn-container '>
 					<a href='#projects'>
 						<motion.button

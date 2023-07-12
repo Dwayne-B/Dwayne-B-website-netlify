@@ -2,7 +2,16 @@
 .about-container {
 	position: relative;
 	// border: solid red;
-	padding-top: 110px;
+	padding-top: u.toRem(110);
+	@media (min-width: 1024px) {
+		padding-top: u.toRem(210);
+	}
+	@media (min-width: 858px) {
+		padding-top: u.toRem(155);
+	}
+	@media (min-width: 1058px) {
+		padding-top: u.toRem(220);
+	}
 }
 
 .about-image {
@@ -15,16 +24,46 @@
 	left: -159px;
 	top: 14px;
 	position: absolute;
+	@media (min-width: 768px) {
+		// object-fit: cover;
+		width: 45%;
+		left: -190px;
+		top: 0px;
+	}
+	@media (min-width: 858px) {
+		// object-fit: cover;
+		width: 45%;
+		left: -215px;
+		top: 0px;
+	}
+	@media (min-width: 1024px) {
+		// object-fit: cover;
+		width: 45%;
+		left: -270px;
+		top: 0px;
+	}
+	@media (min-width: 1124px) {
+		// object-fit: cover;
+		width: 45%;
+		left: -300px;
+		top: 0px;
+	}
+	@media (min-width: 1324px) {
+		// object-fit: cover;
+		width: 45%;
+		left: -350px;
+		top: 0px;
+	}
 }
 .about-content {
 	@media (min-width: 660px) {
-		max-width: 85%;
-		width: 85%;
+		// max-width: 85%;
+		// width: 85%;
 	}
 	@media (min-width: 776px) {
-		max-width: 70%;
-		width: 70%;
-		margin: auto;
+		// max-width: 70%;
+		width: 90%;
+		// margin: auto;
 	}
 	p {
 		// max-width: 85%;
@@ -33,6 +72,7 @@
 	}
 	span {
 		color: rgb(110, 231, 183);
+		display: inline-block;
 	}
 }
 

@@ -1,7 +1,8 @@
+@use '../../SassUtil/index' as u;
 .slide-show-container {
 	// border: solid 1px red;
 	display: flex;
-	margin: 200px;
+	// margin: 200px;
 
 	// width: 300px;
 	justify-content: center;
@@ -13,10 +14,17 @@
 	gap: 15px;
 	// border: solid green 3px;
 	display: flex;
+	@media (min-width: 768px) {
+		margin: u.toRem(50) 0;
+	}
 }
 
 .slide-show-container img {
 	// border: solid 1px blue;
 	// width: 75px;
 	// height: 150px;
+	@media (min-width: 684px) {
+		width: u.toRem(50);
+		height: u.toRem(50);
+	}
 }

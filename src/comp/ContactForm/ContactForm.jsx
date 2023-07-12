@@ -59,7 +59,7 @@ function ContactForm() {
 				className='everyOtherBtn'
 				data-aos='fade-down'
 				type='submit'>
-				Submit
+				Send
 			</motion.button>
 		</form>
 	);

@@ -2,7 +2,11 @@
 .skills-container {
 	// border: solid red;
 	min-height: 100%;
+	// padding-top: u.toRem(110);
 	padding-bottom: u.toRem(50);
+	@media (min-width: 768px) {
+		margin-top: u.toRem(150);
+	}
 }
 .skill-content {
 	display: flex;
@@ -12,6 +16,9 @@
 	// border: solid red;
 	margin-top: u.toRem(30);
 	// margin-bottom: u.toRem(30);
+	@media (min-width: 768px) {
+		margin-top: u.toRem(50);
+	}
 }
 .skill-image {
 	margin-top: u.toRem(30);
@@ -21,6 +28,10 @@
 svg {
 	cursor: pointer;
 	// margin-top: u.toRem(-150);
+	@media (min-width: 684px) {
+		width: u.toRem(50);
+		height: u.toRem(50);
+	}
 }
 .skill-data-container {
 	margin-top: u.toRem(30);

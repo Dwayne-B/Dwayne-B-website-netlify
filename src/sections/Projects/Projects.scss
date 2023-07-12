@@ -1,28 +1,11 @@
 @use '../../SassUtil/index' as u;
+.project-container {
+	// border: solid red 2px;
+}
 .project-heading h2,
 .project-filter {
 	padding-bottom: u.toRem(30);
-}
-.project-display {
-	// border: solid red 2px;
-	padding: u.toRem(55);
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	gap: u.toRem(20);
-
-	@media (min-width: 630px) {
-		width: 60%;
-		margin: auto;
-	}
-	@media (min-width: 768px) {
-		width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;
-		// border: solid red;
-	}
+	// border: solid blue 2px;
 }
 
 .project-filter span {
@@ -43,20 +26,30 @@
 	border-bottom: 5px solid #64e2b5;
 	// background-color: red;
 }
-.project-container {
-	position: relative;
-	overflow: hidden;
-}
-.project-image {
-	// transform: rotateX(160deg) rotateZ(-15deg) rotateY(180deg);
-	mix-blend-mode: color-burn;
-	position: absolute;
-	right: u.toRem(-200);
-	bottom: u.toRem(1500);
-	z-index: -1;
-
+.project-display {
+	padding: u.toRem(50);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: u.toRem(20);
+	@media (max-width: 325px) {
+		padding: u.toRem(0);
+	}
+	@media (min-width: 684px) {
+		width: 100%;
+		margin: auto;
+		padding: u.toRem(50);
+		flex-direction: row;
+		// justify-content: center;
+		// align-items: center;
+		flex-wrap: wrap;
+	}
 	@media (min-width: 768px) {
-		right: u.toRem(-200);
-		bottom: u.toRem(10);
+		width: 100%;
+
+		// flex-direction: row;
+		// flex-wrap: wrap;
+		// border: solid red;
 	}
 }

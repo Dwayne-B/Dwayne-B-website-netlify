@@ -43,14 +43,7 @@ function Projects() {
 			github: '',
 			demo: 'https://www.listenwithkristen.com/',
 		},
-		{
-			title: 'Loop Studio',
-			tag: 'no-code',
-			url: loopstudio,
-			tech: [wix, javascript],
-			github: 'https://github.com/Dwayne-B/loopstudio',
-			demo: 'https://dwaynebynumtech.editorx.io/loopstudio',
-		},
+
 		{
 			title: 'Clipboard-landing',
 			url: clipboard,
@@ -153,14 +146,14 @@ function Projects() {
 						}}>
 						No-code
 					</span>
-					<span
+					{/* <span
 						className='filter'
 						onClick={(e) => {
 							console.log(e.target.innerHTML);
 							setTag(e.target.innerHTML);
 						}}>
 						React-Native
-					</span>
+					</span> */}
 				</div>
 			</div>
 			<div className='project-display'>
