@@ -15,6 +15,7 @@
 }
 
 .about-image {
+	filter: gray;
 	z-index: -1;
 	// border-radius: 100px;
 	// aspect-ratio: 1/1;
@@ -64,6 +65,9 @@
 		// max-width: 70%;
 		width: 90%;
 		// margin: auto;
+	}
+	h2 {
+		line-height: 4rem;
 	}
 	p {
 		// max-width: 85%;

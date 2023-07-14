@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import './slideshow.scss';
-function SlideShow({ skill }) {
-	console.log(skill);
+function SlideShow({ index, skill }) {
+	console.log(index);
 
 	return (
 		<div className='slide-show-container'>

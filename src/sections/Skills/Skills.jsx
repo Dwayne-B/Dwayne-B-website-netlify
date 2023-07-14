@@ -1,8 +1,7 @@
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
-
 import { motion } from 'framer-motion';
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useState } from 'react';
 import accent from '../../assets/accent.webp';
 import phone from '../../assets/phone.png';
 import css from '../../assets/tech-icons/css.webp';
@@ -25,7 +24,7 @@ import SlideShow from '../../comp/SlideShow/SlideShow';
 import './Skills.scss';
 function Skills() {
 	// AOS.init();
-	const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+	const [index, setIndex] = useState(0);
 	const skills = [
 		{
 			title: 'Front-end',
@@ -75,7 +74,10 @@ function Skills() {
 	return (
 		<div className='skills-container section '>
 			<h2>Frequently Used Technology</h2>
-			<div className='skill-content'>
+			<motion.div
+				initial={{ opacity: 0, y: 200 }}
+				whileInView={{ opacity: 1, y: 0, delay: 0.4 }}
+				className='skill-content'>
 				<motion.svg
 					whileTap={{ scale: 0.8 }}
 					width='24'
@@ -107,7 +109,7 @@ function Skills() {
 				</motion.svg>
 
 				<div>
-					<SlideShow skill={skills} />
+					<SlideShow index={index} skill={skills} />
 					<div className='skill-data-container'>
 						<span>
 							<p className='text-left'>HTML</p>
@@ -204,7 +206,8 @@ function Skills() {
 						</span>
 					</div>
 				</div>
-				<svg
+				<motion.svg
+					whileTap={{ scale: 0.8 }}
 					width='24'
 					height='24'
 					viewBox='0 0 24 24'
@@ -231,8 +234,8 @@ function Skills() {
 						strokeLinecap='round'
 						strokeLinejoin='round'
 					/>
-				</svg>
-			</div>
+				</motion.svg>
+			</motion.div>
 		</div>
 	);
 }
