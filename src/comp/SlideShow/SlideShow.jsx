@@ -15,8 +15,7 @@ function SlideShow({ CurrentSlide, skill }) {
 								<motion.img
 									whileHover={{ scale: 1.25 }}
 									src={url}
-									alt=''
-									srcset=''
+									alt='skill-icons'
 									width={50}
 									height={50}
 								/>

@@ -1,6 +1,6 @@
 import Hamburger from 'hamburger-react';
 import { useState } from 'react';
-import Logo from '../../assets/logo.webp';
+import Logo from '../../assets/3d-logo.png';
 import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 function Nav() {
 	const [isOpen, setOpen] = useState(false);
@@ -19,30 +19,32 @@ function Nav() {
 				</div>
 			) : null}
 			<div className=''>
-				<picture>
-					{/* lg-desktop */}
-					<source
-						media='(min-width: 650px)'
-						srcSet={Logo}
-						width={20}
-						height={20}
-					/>
-					{/* med-tablet */}
-					<source
-						media='(min-width: 465px)'
-						srcSet={Logo}
-						width={80}
-						height={80}
-					/>
-					{/* sm */}
-					<img
-						className='logo'
-						src={Logo}
-						alt='Example'
-						width={20}
-						height={20}
-					/>
-				</picture>
+				<a href='#'>
+					<picture>
+						{/* lg-desktop */}
+						<source
+							media='(min-width: 650px)'
+							srcSet={Logo}
+							width={20}
+							height={20}
+						/>
+						{/* med-tablet */}
+						<source
+							media='(min-width: 465px)'
+							srcSet={Logo}
+							width={80}
+							height={80}
+						/>
+						{/* sm */}
+						<img
+							className='logo'
+							src={Logo}
+							alt='Example'
+							width={20}
+							height={20}
+						/>
+					</picture>
+				</a>
 			</div>
 			<Hamburger
 				className='z-[999]'
