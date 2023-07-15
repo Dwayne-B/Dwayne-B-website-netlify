@@ -1,30 +1,17 @@
 @use '../../SassUtil/index' as u;
 .slide-show-container {
-	// border: solid 1px red;
+	align-self: center;
+}
+.slide-icons-container {
 	display: flex;
-	// margin: 200px;
-
-	// width: 300px;
+	flex-wrap: wrap;
 	justify-content: center;
-
-	margin: auto;
+	gap: 50px;
+	margin-top: u.toRem(30);
+	// border: solid green 2px;
 }
 
-.slide-container {
-	gap: 15px;
-	// border: solid green 3px;
-	display: flex;
-	@media (min-width: 768px) {
-		margin: u.toRem(50) 0;
-	}
-}
-
-.slide-show-container img {
-	// border: solid 1px blue;
-	// width: 75px;
-	// height: 150px;
-	@media (min-width: 684px) {
-		width: u.toRem(50);
-		height: u.toRem(50);
-	}
+.slide-icons-container img {
+	height: 50px;
+	width: 50px;
 }

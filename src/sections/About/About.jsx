@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { React, useContext } from 'react';
-import profile from '../../assets/profile.png';
+// import profile from '../../assets/profile.png';
+import profile from '../../assets/alt-profile.png';
+
 import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 import './About.scss';
 function About() {

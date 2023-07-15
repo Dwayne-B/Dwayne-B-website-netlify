@@ -5,12 +5,12 @@ import { Suspense, lazy, useState } from 'react';
 import accent from '../../assets/accent.webp';
 import phone from '../../assets/phone.png';
 import css from '../../assets/tech-icons/css.webp';
-import dynamodb from '../../assets/tech-icons/dynamodb.webp';
+
 import express from '../../assets/tech-icons/express.webp';
 import html from '../../assets/tech-icons/html.webp';
 import javascript from '../../assets/tech-icons/js.webp';
 import mongodb from '../../assets/tech-icons/mongodb.webp';
-import nextjs from '../../assets/tech-icons/nextjs.webp';
+import nextjs from '../../assets/tech-icons/next.webp';
 import node from '../../assets/tech-icons/node.webp';
 import postgres from '../../assets/tech-icons/postgres.webp';
 import react from '../../assets/tech-icons/react.webp';
@@ -24,61 +24,86 @@ import SlideShow from '../../comp/SlideShow/SlideShow';
 import './Skills.scss';
 function Skills() {
 	// AOS.init();
-	const [index, setIndex] = useState(0);
+	const [CurrentSlide, setCurrentSlide] = useState(0);
 	const skills = [
 		{
 			title: 'Front-end',
 			skillNames: ['html', 'css', 'js'],
 			urls: [html, css, javascript],
 		},
-		// {
-		// 	title: 'Back-end',
+		{
+			title: 'Back-end',
 
-		// 	skillNames: ['node'],
-		// 	urls: [node],
-		// },
-		// {
-		// 	title: 'Databases',
-		// 	skillNames: ['mongodb'],
-		// 	urls: [mongodb, dynamodb, postgres],
-		// },
-		// {
-		// 	title:
-		// 		'✨ Syntactic Sugar✨ , Frameworks & Libraries ',
+			skillNames: ['node'],
+			urls: [node],
+		},
+		{
+			title: 'Databases',
+			skillNames: ['mongodb'],
+			urls: [mongodb, postgres],
+		},
+		{
+			title:
+				'✨ Syntactic Sugar✨ , Frameworks & Libraries ',
 
-		// 	skillNames: [
-		// 		'react',
-		// 		'sass',
-		// 		'tailwind',
-		// 		'nextjs',
-		// 		'express',
-		// 		'typescript',
-		// 	],
-		// 	urls: [
-		// 		react,
-		// 		sass,
-		// 		tailwind,
-		// 		// nextjs,
-		// 		express,
-		// 		typescript,
-		// 	],
-		// },
-		// {
-		// 	title: 'No-Code',
-		// 	skillNames: ['wix,webflow'],
+			skillNames: [
+				'react',
+				'sass',
+				'tailwind',
+				'nextjs',
+				'express',
+				'typescript',
+			],
+			urls: [
+				react,
+				sass,
+				tailwind,
+				nextjs,
+				express,
+				typescript,
+			],
+		},
+		{
+			title: 'No-Code',
+			skillNames: ['wix,webflow'],
 
-		// 	urls: [wix, webflow],
-		// },
+			urls: [wix, webflow],
+		},
 	];
-	console.log(skills[0]);
+
+	const handleSlideChange = (e) => {
+		if (
+			e.target.id === 'increase' &&
+			CurrentSlide != skills.length - 1
+		) {
+			setCurrentSlide((prev) => ++prev);
+		} else if (
+			e.target.id === 'decrease' &&
+			CurrentSlide <= skills.length - 1 &&
+			CurrentSlide != 0
+		) {
+			setCurrentSlide((prev) => --prev);
+		} else if (
+			e.target.id === 'decrease' &&
+			CurrentSlide === 0
+		) {
+			setCurrentSlide((prev) => 0);
+		} else {
+			setCurrentSlide((prev) => prev);
+		}
+	};
 	return (
 		<div className='skills-container section '>
-			<h2>Frequently Used Technology</h2>
+			<h2>Tools I like to Use</h2>
 			<motion.div
 				initial={{ opacity: 0, y: 200 }}
 				whileInView={{ opacity: 1, y: 0, delay: 0.4 }}
 				className='skill-content'>
 				<motion.svg
+					id='decrease'
+					onClick={(e) => {
+						handleSlideChange(e);
+					}}
 					whileTap={{ scale: 0.8 }}
 					width='24'
 					height='24'
@@ -108,105 +133,17 @@ function Skills() {
 					/>
 				</motion.svg>
 
-				<div>
-					<SlideShow index={index} skill={skills} />
-					<div className='skill-data-container'>
-						<span>
-							<p className='text-left'>HTML</p>
-							<div
-								className='Group1'
-								style={{
-									width: 256,
-									height: 8,
-									position: 'relative',
-								}}>
-								<div
-									style={{
-										width: 256,
-										height: 8,
-
-										background: 'white',
-										borderRadius: 12,
-									}}
-								/>
-								<div
-									style={{
-										width: 198,
-										height: 8,
-										left: 0,
-										top: 0,
-										position: 'absolute',
-										background: '#64E2B5',
-										borderRadius: 12,
-									}}
-								/>
-							</div>
-						</span>
-						<span>
-							<p className='text-left'>CSS</p>
-							<div
-								className='Group1'
-								style={{
-									width: 256,
-									height: 8,
-									position: 'relative',
-								}}>
-								<div
-									style={{
-										width: 256,
-										height: 8,
-
-										background: 'white',
-										borderRadius: 12,
-									}}
-								/>
-								<div
-									style={{
-										width: 198,
-										height: 8,
-										left: 0,
-										top: 0,
-										position: 'absolute',
-										background: '#64E2B5',
-										borderRadius: 12,
-									}}
-								/>
-							</div>
-						</span>
-						<span>
-							<p className='text-left'>JavaScript</p>
-							<div
-								className='Group1'
-								style={{
-									width: 256,
-									height: 8,
-									position: 'relative',
-								}}>
-								<div
-									style={{
-										width: 256,
-										height: 8,
-
-										background: 'white',
-										borderRadius: 12,
-									}}
-								/>
-								<div
-									style={{
-										width: 198,
-										height: 8,
-										left: 0,
-										top: 0,
-										position: 'absolute',
-										background: '#64E2B5',
-										borderRadius: 12,
-									}}
-								/>
-							</div>
-						</span>
-					</div>
+				<div className='slideshow-cnt'>
+					<SlideShow
+						CurrentSlide={CurrentSlide}
+						skill={skills}
+					/>
 				</div>
 				<motion.svg
+					id='increase'
+					onClick={(e) => {
+						handleSlideChange(e);
+					}}
 					whileTap={{ scale: 0.8 }}
 					width='24'
 					height='24'

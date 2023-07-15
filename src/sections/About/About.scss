@@ -15,7 +15,8 @@
 }
 
 .about-image {
-	filter: gray;
+	// filter: gray;
+	// mix-blend-mode: overlay;
 	z-index: -1;
 	// border-radius: 100px;
 	// aspect-ratio: 1/1;
@@ -23,7 +24,7 @@
 	width: 19.8125rem;
 	// height: 19.8125rem;
 	left: -159px;
-	top: 14px;
+	top: 0px;
 	position: absolute;
 	@media (min-width: 768px) {
 		// object-fit: cover;

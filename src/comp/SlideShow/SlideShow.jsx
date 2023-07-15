@@ -1,23 +1,37 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import './slideshow.scss';
-function SlideShow({ index, skill }) {
-	console.log(index);
+function SlideShow({ CurrentSlide, skill }) {
+	console.log(CurrentSlide);
 
 	return (
-		<div className='slide-show-container'>
-			{skill.map((sk, i) => {
-				console.log(sk);
-				const slides = (
-					<div className='slide-container'>
-						{sk.urls.map((url, i) => {
-							return <img src={url} alt='' srcset='' />;
-						})}
-					</div>
-				);
-				return slides;
-			})}
-		</div>
+		<motion.div className='slide-show-container'>
+			<motion.div className='slide-container   '>
+				<h4>{skill[CurrentSlide].title}</h4>
+				<motion.div className='slide-icons-container'>
+					{skill[CurrentSlide].urls.map((url, i) => {
+						return (
+							<motion.div className='skillNames-container'>
+								<motion.img
+									whileHover={{ scale: 1.25 }}
+									src={url}
+									alt=''
+									srcset=''
+									width={50}
+									height={50}
+								/>
+								<div>
+									<small>
+										{' '}
+										{skill[CurrentSlide].skillNames[i]}{' '}
+									</small>
+								</div>
+							</motion.div>
+						);
+					})}
+				</motion.div>
+			</motion.div>
+		</motion.div>
 	);
 }
 

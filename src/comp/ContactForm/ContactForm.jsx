@@ -12,6 +12,15 @@ function ContactForm() {
 			useForm('Contact-form');
 		},
 	});
+	const ContactFormAnimation = {
+		show: {
+			width: '100%',
+			transition: {
+				duration: 1,
+			},
+		},
+	};
+
 	return (
 		<form
 			target=''
@@ -19,7 +28,12 @@ function ContactForm() {
 			method='POST'
 			className='Contact-form m-auto'>
 			<span>
-				<label htmlFor='email'>Name</label>
+				<motion.label
+					variants={ContactFormAnimation}
+					whileInView='show'
+					htmlFor='email'>
+					Name
+				</motion.label>
 				<input
 					id='name'
 					name='name'
@@ -29,7 +43,12 @@ function ContactForm() {
 				/>
 			</span>
 			<span>
-				<label htmlFor='email'>Email </label>
+				<motion.label
+					variants={ContactFormAnimation}
+					whileInView='show'
+					htmlFor='email'>
+					Email{' '}
+				</motion.label>
 				<input
 					id='email'
 					name='email'
@@ -39,7 +58,12 @@ function ContactForm() {
 				/>
 			</span>
 			<span>
-				<label htmlFor='msg'>Say Hello</label>
+				<motion.label
+					variants={ContactFormAnimation}
+					whileInView='show'
+					htmlFor='msg'>
+					Say Hello
+				</motion.label>
 				<textarea
 					id='msg'
 					name='msg'

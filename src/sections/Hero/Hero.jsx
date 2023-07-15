@@ -102,7 +102,7 @@ function Hero() {
 						target='_blank'
 						href='https://www.freecodecamp.org/DwayneB435'
 						variants={linksAnimation}
-						whileHover={{ rotate: 360 }}>
+						whileHover={{ rotate: 350 }}>
 						<svg
 							className='icon'
 							width='45'
@@ -122,7 +122,7 @@ function Hero() {
 						target='_blank'
 						href='https://www.linkedin.com/in/dwayne-bynum-webdeveloper/'
 						variants={linksAnimation}
-						whileHover={{ rotate: 360 }}>
+						whileHover={{ rotate: 350 }}>
 						<svg
 							className='icon'
 							width='45'
@@ -153,7 +153,7 @@ function Hero() {
 						target='_blank'
 						href='https://github.com/Dwayne-B'
 						variants={linksAnimation}
-						whileHover={{ rotate: 360 }}>
+						whileHover={{ rotate: 350 }}>
 						<svg
 							className='icon'
 							width='45'

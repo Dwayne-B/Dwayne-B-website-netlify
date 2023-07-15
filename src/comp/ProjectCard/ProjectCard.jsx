@@ -20,7 +20,11 @@ function ProjectCard({ url, title, tech, github, demo }) {
 						{tech.map((i, index) => {
 							return (
 								<li key={index}>
-									<img className='tech-icon' src={i} />
+									<motion.img
+										whileHover={{ rotateZ: 350 }}
+										className='tech-icon'
+										src={i}
+									/>
 								</li>
 							);
 						})}
@@ -32,7 +36,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 									background:
 										'linear-gradient(180deg,#34725d 0%,#081516 100%)',
 								}}>
-								Github
+								Docs
 							</motion.button>
 						</a>
 
