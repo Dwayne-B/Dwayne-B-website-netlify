@@ -12,7 +12,7 @@ function Nav() {
 	return (
 		<div className='Navbar flex justify-between items-center p-5 lg:px-16 z-[999]'>
 			{isOpen ? (
-				<motion.div className=' absolute right-0 top-0 bg-black h-screen w-80 opacity-60  py-40 flex flex-col items-center gap-5 z-[-1] '>
+				<motion.div className=' absolute right-0 top-0 bg-black h-screen w-80 opacity-90  py-40 flex flex-col items-center gap-5 z-[-1] '>
 					<motion.a href='#home'>
 						<motion.div
 							variants={NavAnimations}
