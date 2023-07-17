@@ -58,7 +58,7 @@ function Projects() {
 		{
 			title: 'CookBook',
 			url: Cookbook,
-			tag: 'Fullstack',
+			tag: 'Full-stack',
 
 			tech: [mongo, express, ReactUrl, node],
 			github: 'https://github.com/Dwayne-B/cookbook',

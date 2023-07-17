@@ -2,11 +2,12 @@
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { motion } from 'framer-motion';
 import { Suspense, lazy, useState } from 'react';
-import accent from '../../assets/accent.webp';
-import phone from '../../assets/phone.png';
 import css from '../../assets/tech-icons/css.webp';
-
 import express from '../../assets/tech-icons/express.webp';
+import gulp from '../../assets/tech-icons/gulp.webp';
+import jest from '../../assets/tech-icons/jest.webp';
+
+import figma from '../../assets/tech-icons/figma.webp';
 import html from '../../assets/tech-icons/html.webp';
 import javascript from '../../assets/tech-icons/js.webp';
 import mongodb from '../../assets/tech-icons/mongodb.webp';
@@ -28,46 +29,53 @@ function Skills() {
 	const skills = [
 		{
 			title: 'Front-end',
-			skillNames: ['html', 'css', 'js'],
-			urls: [html, css, javascript],
+			skillNames: ['HTML', 'CSS', 'JavaScript', 'React'],
+			urls: [html, css, javascript, react],
 		},
 		{
 			title: 'Back-end',
 
-			skillNames: ['node'],
+			skillNames: ['Node.js'],
 			urls: [node],
 		},
 		{
 			title: 'Databases',
-			skillNames: ['mongodb', 'postgres'],
+			skillNames: ['MongoDB', 'PostgreSQL'],
 			urls: [mongodb, postgres],
 		},
 		{
 			title:
-				'✨ Syntactic Sugar✨ , Frameworks & Libraries ',
+				'✨ Syntactic Sugar✨, Frameworks & Libraries ',
 
 			skillNames: [
-				'react',
-				'sass',
-				'tailwind',
-				'nextjs',
-				'express',
-				'typescript',
+				'SASS',
+				'Tailwind',
+				'Next.js',
+				'Express.js',
+				'TypeScript',
 			],
-			urls: [
-				react,
-				sass,
-				tailwind,
-				nextjs,
-				express,
-				typescript,
-			],
+			urls: [sass, tailwind, nextjs, express, typescript],
 		},
 		{
 			title: 'No-Code',
-			skillNames: ['wix', 'webflow'],
+			skillNames: ['Wix', 'Webflow'],
 
 			urls: [wix, webflow],
+		},
+		{
+			title: 'Design Tools',
+			skillNames: ['Figma'],
+			urls: [figma],
+		},
+		{
+			title: 'Task Runners',
+			skillNames: ['Gulp.js'],
+			urls: [gulp],
+		},
+		{
+			title: 'Testing',
+			skillNames: ['Jest'],
+			urls: [jest],
 		},
 	];
 

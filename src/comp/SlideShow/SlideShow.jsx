@@ -8,10 +8,11 @@ function SlideShow({ CurrentSlide, skill }) {
 		<motion.div className='slide-show-container'>
 			<motion.div className='slide-container   '>
 				<h4>{skill[CurrentSlide].title}</h4>
+
 				<motion.div className='slide-icons-container'>
 					{skill[CurrentSlide].urls.map((url, i) => {
 						return (
-							<motion.div>
+							<motion.div key={i}>
 								<motion.img
 									className='skill-icon'
 									whileHover={{ scale: 1.25 }}
