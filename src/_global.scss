@@ -79,7 +79,6 @@ p {
 button,
 .other-btn {
 	color: white;
-	max-width: u.toRem(183.17);
 	// height: u.toRem(30);
 	padding: 10px 15px;
 	background: linear-gradient(
@@ -102,4 +101,9 @@ input,
 textarea {
 	padding: 10px;
 	border-radius: u.toRem(5);
+}
+
+a {
+	max-width: u.toRem(183.17);
+	width: 100%;
 }

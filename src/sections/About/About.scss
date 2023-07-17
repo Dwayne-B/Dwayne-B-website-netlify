@@ -31,13 +31,6 @@
 		left: -150px;
 		top: 0px;
 		position: absolute;
-		@media (min-width: u.toRem(1272)) {
-			left: -250px;
-			top: 0px;
-		}
-		a {
-			width: 100%;
-		}
 	}
 }
 
@@ -45,8 +38,7 @@
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
-	// max-width: 50%;
-	// justify-content: center;
+	align-items: center;
 	max-width: u.toRem(476.54);
 	margin: auto;
 	margin-top: u.toRem(30);

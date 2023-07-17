@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @use '../../SassUtil/index' as u;
 
 .projectCard {
@@ -8,15 +6,16 @@
 	display: flex;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 	height: u.toRem(300);
-	width: 80%;
-	@media (min-width: 584px) {
-		width: 75%;
-		// max-width: 30%;
-	}
-	@media (min-width: 768px) {
-		width: 32%;
-		// max-width: 30%;
-	}
+	max-width: 80%;
+
+	// @media (min-width: 584px) {
+	// 	width: 75%;
+	// 	// max-width: 30%;
+	// }
+	// @media (min-width: 768px) {
+	// 	width: 32%;
+	// 	// max-width: 30%;
+	// }
 }
 .project-img {
 	border-radius: u.toRem(5);
@@ -80,4 +79,3 @@
 		// width: u.toRem(90);
 	}
 }
->>>>>>> 4fd1fdaef3ddd1bce8fb2944e68c746c6206a9ce

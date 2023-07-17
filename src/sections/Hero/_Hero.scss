@@ -1,6 +1,6 @@
 @use '../../SassUtil/index' as u;
 .hero-section {
-	// height: 100vh;
+	height: 100vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -39,9 +39,7 @@
 	// border: solid 1px red;
 	max-width: u.toRem(476.54);
 	width: 100%;
-	a {
-		width: 100%;
-	}
+
 	button {
 		width: 100%;
 	}

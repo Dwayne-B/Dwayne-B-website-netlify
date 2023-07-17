@@ -35,7 +35,7 @@ function App() {
 					<Suspense fallback={<h2>Loading</h2>}>
 						<About />
 						{/* <Skills /> */}
-						{/* <Projects /> */}
+						<Projects />
 						<Contact />
 					</Suspense>
 
