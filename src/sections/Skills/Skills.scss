@@ -1,18 +1,19 @@
 @use '../../SassUtil/index' as u;
 .skills-container {
-	// border: solid red;
-	min-height: 100%;
 	// padding-top: u.toRem(110);
-	padding-bottom: u.toRem(50);
-	@media (min-width: 768px) {
-		margin-top: u.toRem(150);
-	}
+	// padding-bottom: u.toRem(50);
+	// @media (min-width: 768px) {
+	// 	margin-top: u.toRem(150);
+	// }
 }
 .skill-content {
-	display: flex;
+	// border: solid red 1px;
+	min-height: 45vh;
+	height: 100%;
 
+	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 
 	margin-top: u.toRem(30);
 
@@ -36,16 +37,12 @@ svg {
 	}
 }
 .slideshow-cnt {
-	display: flex;
-	justify-content: center;
-	flex: 2;
-
-	min-height: u.toRem(210);
+	min-width: 50%;
 }
-.skill-data-container {
-	margin-top: u.toRem(30);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	gap: 25px;
-}
+// .skill-data-container {
+// 	margin-top: u.toRem(30);
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-around;
+// 	gap: 25px;
+// }

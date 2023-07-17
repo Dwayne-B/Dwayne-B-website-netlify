@@ -87,7 +87,10 @@ function Skills() {
 			e.target.id === 'decrease' &&
 			CurrentSlide === 0
 		) {
-			setCurrentSlide((prev) => 0);
+			setCurrentSlide((prev) => {
+				prev = 0;
+				return prev;
+			});
 		} else {
 			setCurrentSlide((prev) => prev);
 		}
