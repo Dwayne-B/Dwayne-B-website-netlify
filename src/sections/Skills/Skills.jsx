@@ -2,9 +2,9 @@
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { motion } from 'framer-motion';
 import { Suspense, lazy, useState } from 'react';
-import gulp from '../../assets/tech-icons/Gulp.webp';
 import css from '../../assets/tech-icons/css.webp';
 import express from '../../assets/tech-icons/express.webp';
+import gulp from '../../assets/tech-icons/gulp.webp';
 import jest from '../../assets/tech-icons/jest.webp';
 
 import figma from '../../assets/tech-icons/figma.webp';
