@@ -67,11 +67,11 @@ function Skills() {
 			skillNames: ['Figma'],
 			urls: [figma],
 		},
-		{
-			title: 'Task Runners',
-			skillNames: ['Gulp.js'],
-			urls: [gulp],
-		},
+		// {
+		// 	title: 'Task Runners',
+		// 	skillNames: ['Gulp.js'],
+		// 	urls: [gulp],
+		// },
 		{
 			title: 'Testing',
 			skillNames: ['Jest'],
