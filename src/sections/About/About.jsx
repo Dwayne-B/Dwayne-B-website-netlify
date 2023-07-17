@@ -7,10 +7,8 @@ import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 import './About.scss';
 function About() {
 	return (
-		<div
-			id='about'
-			className='about-container section overflow-hidden'>
-			<div className='about-content flex flex-col m-auto gap-5'>
+		<div id='about' className='about-container section '>
+			<div className='about-content '>
 				<motion.picture
 					initial={{
 						opacity: -1,
@@ -43,33 +41,40 @@ function About() {
 						height={125}
 					/>
 				</motion.picture>
-				<motion.div>
+				<motion.div className='about-content'>
 					<motion.h2>
 						Hi, I’m{' '}
-						<motion.span
+						<motion.div
 							initial={{
-								scale: 1,
 								y: 0,
 							}}
 							whileInView={{
-								scale: 1.25,
 								y: -30,
 							}}
-							className='name	'>
+							className='animated-slice'>
 							Dwayne
-						</motion.span>
-						, Front-end{' '}
-						<motion.span
+						</motion.div>
+						{'  '}
+						<motion.div
 							initial={{
-								scale: 1,
 								y: 0,
 							}}
 							whileInView={{
-								scale: 1.25,
 								y: -30,
-							}}>
+							}}
+							className='animated-slice'>
+							,Front-end
+						</motion.div>{' '}
+						<motion.div
+							initial={{
+								y: 0,
+							}}
+							whileInView={{
+								y: -30,
+							}}
+							className='animated-slice'>
 							Developer
-						</motion.span>{' '}
+						</motion.div>{' '}
 						based in Orlando, Florida.
 					</motion.h2>
 					<p>
@@ -81,7 +86,7 @@ function About() {
 						ideas to reality!
 					</p>
 				</motion.div>
-				<div className='btn-container '>
+				<div className='about-btn-container '>
 					<a href='#projects'>
 						<motion.button
 							whileHover={{

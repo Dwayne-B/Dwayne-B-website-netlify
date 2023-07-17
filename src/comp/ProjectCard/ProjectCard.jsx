@@ -24,13 +24,15 @@ function ProjectCard({ url, title, tech, github, demo }) {
 										whileHover={{ rotateZ: 350 }}
 										className='tech-icon'
 										src={i}
+										height={35}
+										width={35}
 									/>
 								</li>
 							);
 						})}
 					</ul>
 					<div className='projectCard-btn-contianer '>
-						<a target='_blank ' href={github}>
+						{/* <a target='_blank ' href={github}>
 							<motion.button
 								whileHover={{
 									background:
@@ -38,7 +40,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 								}}>
 								Docs
 							</motion.button>
-						</a>
+						</a> */}
 
 						<a href={demo} target='_blank'>
 							<motion.button

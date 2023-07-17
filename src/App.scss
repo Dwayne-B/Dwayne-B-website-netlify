@@ -9,18 +9,16 @@
 
 .section {
 	// border: solid red 4px;
-	min-height: 100vh;
+
+	// max-width: 1150px;
+	width: 100%;
 	// min-height: 100vh;
-	// padding-top: 80px;
-	margin-bottom: 100px;
+	padding-top: 80px;
+	padding-left: 15px;
+	padding-right: 15px;
+
 	text-align: center;
 	color: white;
-	& > div:first-of-type {
-		max-width: u.toRem(1134);
-		padding-left: 0.75rem;
-		padding-right: 0.75rem;
-		@media (min-width: 784px) {
-			margin: auto;
-		}
-	}
+	margin: auto;
+	margin-bottom: 40px;
 }

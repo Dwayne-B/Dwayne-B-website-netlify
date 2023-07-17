@@ -1,11 +1,12 @@
 @use '../../SassUtil/index' as u;
 .hero-section {
+	// height: 100vh;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
-	// border: solid red 2px;
+	padding-bottom: u.toRem(50);
 	&::before {
 		content: '';
 		background-color: #00000085;
@@ -15,10 +16,6 @@
 		top: 0;
 		z-index: 0;
 	}
-	// background-image: url('./assets/office.webp');
-	// background-position: u.toRem(-65);
-	// background-repeat: no-repeat;
-	// background-size: cover;
 	@media (min-width: 600px) {
 		background-position: left;
 	}
@@ -38,6 +35,16 @@
 .btn-container {
 	display: flex;
 	gap: 15px;
+	justify-content: center;
+	// border: solid 1px red;
+	max-width: u.toRem(476.54);
+	width: 100%;
+	a {
+		width: 100%;
+	}
+	button {
+		width: 100%;
+	}
 }
 .hero-content {
 	display: flex;

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { useFormik } from 'formik';
 import React from 'react';
-import './ContactForm.scss';
+// import './ContactForm.scss';
 function ContactForm() {
 	const formik = useFormik({
 		initialValues: { name: '', email: '', msg: '' },
@@ -80,9 +80,9 @@ function ContactForm() {
 					background:
 						'linear-gradient(180deg,#34725d 0%,#081516 100%)',
 				}}
-				className='everyOtherBtn'
 				data-aos='fade-down'
-				type='submit'>
+				type='submit'
+				className='other-btn'>
 				Send
 			</motion.button>
 		</form>

@@ -39,7 +39,7 @@ function Skills() {
 		},
 		{
 			title: 'Databases',
-			skillNames: ['mongodb'],
+			skillNames: ['mongodb', 'postgres'],
 			urls: [mongodb, postgres],
 		},
 		{
@@ -65,7 +65,7 @@ function Skills() {
 		},
 		{
 			title: 'No-Code',
-			skillNames: ['wix,webflow'],
+			skillNames: ['wix', 'webflow'],
 
 			urls: [wix, webflow],
 		},
