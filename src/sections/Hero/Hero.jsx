@@ -120,7 +120,7 @@ function Hero() {
 
 					<motion.a
 						target='_blank'
-						href='https://www.linkedin.com/in/dwayne-bynum-webdeveloper/'
+						href='https://www.linkedin.com/in/dwayne-bynum-94ab2b283/'
 						variants={linksAnimation}
 						whileHover={{ rotate: 350 }}>
 						<svg

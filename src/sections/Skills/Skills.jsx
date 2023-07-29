@@ -20,7 +20,7 @@ import tailwind from '../../assets/tech-icons/tailwind.webp';
 import typescript from '../../assets/tech-icons/ts.webp';
 import webflow from '../../assets/tech-icons/webflow.webp';
 import wix from '../../assets/tech-icons/wix.webp';
-// import Ball from '../../comp/Ball/Ball';
+
 import SlideShow from '../../comp/SlideShow/SlideShow';
 import './Skills.scss';
 function Skills() {
