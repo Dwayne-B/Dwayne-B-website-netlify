@@ -2,7 +2,8 @@ import react from '@vitejs/plugin-react';
 
 import { defineConfig } from 'vite';
 import viteImagemin from 'vite-plugin-imagemin';
-// https://vitejs.dev/config/
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
+
 export default defineConfig({
-	plugins: [react(), viteImagemin()],
+	plugins: [react(), viteImagemin(), ViteMinifyPlugin({})],
 });

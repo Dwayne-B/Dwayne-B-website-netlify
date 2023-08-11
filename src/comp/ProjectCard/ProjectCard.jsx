@@ -10,7 +10,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 				className='project-img'
 				src={url}
 				alt={title}
-				srcSet=''
+				
 			/>
 			<div className='projectCard-content'>
 				{<h4>{title}</h4>}
@@ -26,6 +26,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 										src={i}
 										height={35}
 										width={35}
+										alt='tech-icon'
 									/>
 								</li>
 							);
@@ -50,7 +51,7 @@ function ProjectCard({ url, title, tech, github, demo }) {
 								}}
 								href={demo}
 								target='_blank'>
-								Demo
+								{demo?"Live Demo":"Request Demo"}
 							</motion.button>
 						</a>
 					</div>

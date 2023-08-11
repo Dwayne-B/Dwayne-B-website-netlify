@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 import { useState } from 'react';
-import Logo from '../../assets/3d-logo.png';
+import Logo from '../../assets/3d-logo.webp';
 import resume from '../../assets/resume/DwayneAlexBynumJr.pdf';
 function Nav() {
 	const [isOpen, setOpen] = useState(false);
@@ -58,6 +58,7 @@ function Nav() {
 				</a>
 			</div>
 			<Hamburger
+				aria-label="hamburger Menu"
 				className='z-[999]'
 				color='#e7bd96'
 				toggled={isOpen}

@@ -150,6 +150,8 @@ function Hero() {
 					</motion.a>
 
 					<motion.a
+					aria-label="link to github"
+						alt=''
 						target='_blank'
 						href='https://github.com/Dwayne-B'
 						variants={linksAnimation}

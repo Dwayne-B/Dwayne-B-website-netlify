@@ -31,7 +31,7 @@ function ContactForm() {
 				<motion.label
 					variants={ContactFormAnimation}
 					whileInView='show'
-					htmlFor='email'>
+					htmlFor='name'>
 					Name
 				</motion.label>
 				<input
