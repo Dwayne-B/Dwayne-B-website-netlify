@@ -19,10 +19,9 @@
 }
 .project-img {
 	border-radius: u.toRem(5);
-
+	aspect-ratio: 1/1;
 	object-fit: cover;
 	width: 100%;
-
 	height: 100%;
 }
 

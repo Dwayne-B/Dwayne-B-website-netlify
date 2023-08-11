@@ -10,8 +10,8 @@ function ProjectCard({ url, title, tech, github, demo }) {
 				className='project-img'
 				src={url}
 				alt={title}
-				height={35}
-										width={35}
+				height={100}
+				width={100}
 			/>
 			<div className='projectCard-content'>
 				{<h4>{title}</h4>}
