@@ -40,8 +40,8 @@ function Skills() {
 		},
 		{
 			title: 'Databases',
-			skillNames: ['MongoDB', 'PostgreSQL'],
-			urls: [mongodb, postgres],
+			skillNames: ['MongoDB'],
+			urls: [mongodb],
 		},
 		{
 			title:
@@ -58,9 +58,9 @@ function Skills() {
 		},
 		{
 			title: 'No-Code',
-			skillNames: ['Wix', 'Webflow'],
+			skillNames: ['Wix' ],
 
-			urls: [wix, webflow],
+			urls: [wix, ],
 		},
 		{
 			title: 'Design Tools',
@@ -72,11 +72,11 @@ function Skills() {
 			skillNames: ['Gulp.js'],
 			urls: [gulp],
 		},
-		{
-			title: 'Testing',
-			skillNames: ['Jest'],
-			urls: [jest],
-		},
+		// {
+		// 	title: 'Testing',
+		// 	skillNames: ['Jest'],
+		// 	urls: [jest],
+		// },
 	];
 
 	const handleSlideChange = (e) => {

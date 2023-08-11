@@ -1,13 +1,13 @@
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import accent from '../../assets/accent.webp';
-import Activi from '../../assets/projects/Activi.webp';
+import spaceX from '../../assets/projects/spaceX.webp';
 import ModernEmail from '../../assets/projects/Modern-email.webp';
 import baseApparel from '../../assets/projects/base-apparel.webp';
 import clipboard from '../../assets/projects/clipboard.webp';
 import Cookbook from '../../assets/projects/cookbook.webp';
-import loopstudio from '../../assets/projects/loopstudio.webp';
+import sass from '../../assets/tech-icons/sass.webp';
 import lwk from '../../assets/projects/lwk.webp';
 import sunnySide from '../../assets/projects/sunnyside.webp';
 import css from '../../assets/tech-icons/css.webp';
@@ -24,6 +24,15 @@ function Projects() {
 	// AOS.init();
 	// create project state whihc will be an array of projects
 	const projectData = [
+		{
+			title: 'SpaceX: Capsules & Dragons',
+			tag: 'front-end',
+			url: sunnySide,
+			tech: [ReactUrl, sass, javascript],
+			github:
+				'https://github.com/Dwayne-B/FEM-sunnysideAgency',
+			demo: 'https://guileless-rabanadas-c1cd46.netlify.app/',
+		},
 		{
 			title: 'SunnySide Agency',
 			tag: 'front-end',
@@ -58,7 +67,7 @@ function Projects() {
 		{
 			title: 'CookBook',
 			url: Cookbook,
-			tag: 'Full-stack',
+			tag: 'Fullstack',
 
 			tech: [mongo, express, ReactUrl, node],
 			github: 'https://github.com/Dwayne-B/cookbook',

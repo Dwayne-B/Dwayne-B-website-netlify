@@ -44,14 +44,15 @@ function ProjectCard({ url, title, tech, github, demo }) {
 							</motion.button>
 						</a> */}
 
-						<a href={demo} target='_blank'>
+						<a href={demo?demo:"#contact"}
+								target={demo?"_blank":""}>
 							<motion.button
 								whileHover={{
 									background:
 										'linear-gradient(180deg,#34725d 0%,#081516 100%)',
 								}}
-								href={demo}
-								target='_blank'>
+								href={demo?demo:"#contact"}
+								target={demo?"_blank":""}>
 								{demo?"Live Demo":"Request Demo"}
 							</motion.button>
 						</a>
