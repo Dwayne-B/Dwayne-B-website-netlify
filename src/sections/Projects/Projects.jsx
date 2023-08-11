@@ -33,15 +33,15 @@ function Projects() {
 				'https://github.com/Dwayne-B/FEM-sunnysideAgency',
 			demo: 'https://guileless-rabanadas-c1cd46.netlify.app/',
 		},
-		{
-			title: 'SunnySide Agency',
-			tag: 'front-end',
-			url: sunnySide,
-			tech: [html, css, javascript],
-			github:
-				'https://github.com/Dwayne-B/FEM-sunnysideAgency',
-			demo: 'https://dwayne-b.github.io/FEM-sunnysideAgency/',
-		},
+		// {
+		// 	title: 'SunnySide Agency',
+		// 	tag: 'front-end',
+		// 	url: sunnySide,
+		// 	tech: [html, css, javascript],
+		// 	github:
+		// 		'https://github.com/Dwayne-B/FEM-sunnysideAgency',
+		// 	demo: 'https://dwayne-b.github.io/FEM-sunnysideAgency/',
+		// },
 
 		{
 			title: 'Listen With Kristen',
