@@ -1,7 +1,5 @@
 @use '../../SassUtil/index' as u;
-.project-container {
-	// border: solid red 2px;
-}
+
 .project-heading h2,
 .project-filter {
 	padding-bottom: u.toRem(30);

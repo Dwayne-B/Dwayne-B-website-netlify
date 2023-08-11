@@ -2,8 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import './slideshow.scss';
 function SlideShow({ CurrentSlide, skill }) {
-	console.log(CurrentSlide);
-
+ 
 	return (
 		<motion.div className='slide-show-container'>
 			<motion.div className='slide-container   '>
