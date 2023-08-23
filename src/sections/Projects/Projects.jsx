@@ -24,15 +24,15 @@ function Projects() {
 	// AOS.init();
 	// create project state whihc will be an array of projects
 	const projectData = [
-		{
-			title: 'SpaceX: Capsules & Dragons',
-			tag: 'front-end',
-			url: sunnySide,
-			tech: [ReactUrl, sass, javascript],
-			github:
-				'https://github.com/Dwayne-B/FEM-sunnysideAgency',
-			demo: 'https://guileless-rabanadas-c1cd46.netlify.app/',
-		},
+		// {
+		// 	title: 'SpaceX: Capsules & Dragons',
+		// 	tag: 'front-end',
+		// 	url: sunnySide,
+		// 	tech: [ReactUrl, sass, javascript],
+		// 	github:
+		// 		'https://github.com/Dwayne-B/FEM-sunnysideAgency',
+		// 	demo: 'https://guileless-rabanadas-c1cd46.netlify.app/',
+		// },
 		// {
 		// 	title: 'SunnySide Agency',
 		// 	tag: 'front-end',

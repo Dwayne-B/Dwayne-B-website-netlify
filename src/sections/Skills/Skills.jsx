@@ -28,24 +28,24 @@ function Skills() {
 	const [CurrentSlide, setCurrentSlide] = useState(0);
 	const skills = [
 		{
-			title: 'Front-end',
+			title: 'Front-end ',
 			skillNames: ['HTML', 'CSS', 'JavaScript', 'React'],
 			urls: [html, css, javascript, react],
 		},
 		{
-			title: 'Back-end',
+			title: 'Back-end ',
 
 			skillNames: ['Node.js'],
 			urls: [node],
 		},
 		{
-			title: 'Databases',
+			title: 'Databases ',
 			skillNames: ['MongoDB'],
 			urls: [mongodb],
 		},
 		{
 			title:
-				'✨ Syntactic Sugar✨, Frameworks & Libraries ',
+				'Frameworks & Libraries ',
 
 			skillNames: [
 				'SASS',
@@ -67,11 +67,11 @@ function Skills() {
 			skillNames: ['Figma'],
 			urls: [figma],
 		},
-		{
-			title: 'Task Runners',
-			skillNames: ['Gulp.js'],
-			urls: [gulp],
-		},
+		// {
+		// 	title: 'Task Runners',
+		// 	skillNames: ['Gulp.js'],
+		// 	urls: [gulp],
+		// },
 		// {
 		// 	title: 'Testing',
 		// 	skillNames: ['Jest'],
