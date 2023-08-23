@@ -71,6 +71,7 @@ function Projects() {
 
 			tech: [mongo, express, ReactUrl, node],
 			github: 'https://github.com/Dwayne-B/cookbook',
+			demo:'https://luxury-cuchufli-d864bf.netlify.app/'
 			
 		},
 	];
