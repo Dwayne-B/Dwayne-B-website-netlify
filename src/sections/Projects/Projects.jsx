@@ -1,7 +1,7 @@
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 import React, { useEffect, useState } from 'react';
 import accent from '../../assets/accent.webp';
+// import ProjectFilter from '../../comp/ProjectFilter/ProjectFilter'
 import spaceX from '../../assets/projects/spaceX.webp';
 import ModernEmail from '../../assets/projects/Modern-email.webp';
 import baseApparel from '../../assets/projects/base-apparel.webp';
@@ -24,46 +24,8 @@ function Projects() {
 	// AOS.init();
 	// create project state whihc will be an array of projects
 	const projectData = [
-		// {
-		// 	title: 'SpaceX: Capsules & Dragons',
-		// 	tag: 'front-end',
-		// 	url: sunnySide,
-		// 	tech: [ReactUrl, sass, javascript],
-		// 	github:
-		// 		'https://github.com/Dwayne-B/FEM-sunnysideAgency',
-		// 	demo: 'https://guileless-rabanadas-c1cd46.netlify.app/',
-		// },
-		// {
-		// 	title: 'SunnySide Agency',
-		// 	tag: 'front-end',
-		// 	url: sunnySide,
-		// 	tech: [html, css, javascript],
-		// 	github:
-		// 		'https://github.com/Dwayne-B/FEM-sunnysideAgency',
-		// 	demo: 'https://dwayne-b.github.io/FEM-sunnysideAgency/',
-		// },
-
-		{
-			title: 'Listen With Kristen',
-			url: lwk,
-			tag: 'no-code',
-
-			tech: [wix, javascript],
-			github: '',
-			demo: 'https://www.listenwithkristen.com/',
-		},
-
-		{
-			title: 'Clipboard-landing',
-			url: clipboard,
-			tag: 'no-code',
-
-			tech: [wix, javascript],
-			github:
-				'https://github.com/Dwayne-B/Clipboard-landing',
-			demo: 'https://dwaynebynumtech.editorx.io/my-site',
-		},
-
+	
+	
 		{
 			title: 'CookBook',
 			url: Cookbook,
@@ -121,50 +83,8 @@ function Projects() {
 			className='section project-container'
 			data-aos='fade-up'>
 			<div className='project-heading'>
-				<h2>Projects</h2>
-				<div className='project-filter'>
-					{/* condense filter buttons to mapped out component */}
-					<span
-						className='filter'
-						onClick={(e) => {
-							console.log(e.target.innerHTML);
-							setTag(e.target.innerHTML);
-						}}>
-						All
-					</span>
-					<span
-						className='filter'
-						onClick={(e) => {
-							console.log(e.target.innerHTML);
-							setTag(e.target.innerHTML);
-						}}>
-						Front-end
-					</span>
-					<span
-						className='filter'
-						onClick={(e) => {
-							console.log(e.target.innerHTML);
-							setTag(e.target.innerHTML);
-						}}>
-						Fullstack
-					</span>
-					<span
-						className='filter'
-						onClick={(e) => {
-							console.log(e.target.innerHTML);
-							setTag(e.target.innerHTML);
-						}}>
-						No-code
-					</span>
-					{/* <span
-						className='filter'
-						onClick={(e) => {
-							console.log(e.target.innerHTML);
-							setTag(e.target.innerHTML);
-						}}>
-						React-Native
-					</span> */}
-				</div>
+				<h2>My Work</h2>
+				{/* <ProjectFilter/> */}
 			</div>
 			<div className='project-display'>
 				{filteredProjects.map((project, i) => {

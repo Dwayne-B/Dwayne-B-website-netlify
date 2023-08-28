@@ -35,48 +35,27 @@ function Skills() {
 		{
 			title: 'Back-end ',
 
-			skillNames: ['Node.js'],
-			urls: [node],
+			skillNames: ['Node.js','Express.js'],
+			urls: [node,express],
 		},
 		{
-			title: 'Databases ',
+			title: 'Storage',
 			skillNames: ['MongoDB'],
 			urls: [mongodb],
 		},
 		{
 			title:
-				'Frameworks & Libraries ',
+				'Syntactic sugar etc.',
 
 			skillNames: [
 				'SASS',
 				'Tailwind',
 				'Next.js',
-				'Express.js',
 				'TypeScript',
 			],
-			urls: [sass, tailwind, nextjs, express, typescript],
+			urls: [sass, tailwind, nextjs, typescript],
 		},
-		{
-			title: 'No-Code',
-			skillNames: ['Wix' ],
-
-			urls: [wix, ],
-		},
-		{
-			title: 'Design Tools',
-			skillNames: ['Figma'],
-			urls: [figma],
-		},
-		// {
-		// 	title: 'Task Runners',
-		// 	skillNames: ['Gulp.js'],
-		// 	urls: [gulp],
-		// },
-		// {
-		// 	title: 'Testing',
-		// 	skillNames: ['Jest'],
-		// 	urls: [jest],
-		// },
+		
 	];
 
 	const handleSlideChange = (e) => {

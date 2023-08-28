@@ -29,7 +29,7 @@ function Nav() {
 					</a>
 				</motion.div>
 			) : null}
-			<div className='pl-[4rem]'>
+			<div className='pl-[2.25rem] lg:pl-[3rem]'>
 				<a href='#'>
 					<picture >
 						{/* lg-desktop */}
